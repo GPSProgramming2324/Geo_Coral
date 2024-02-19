@@ -37,6 +37,7 @@ countries_of_interest = ['Indonesia', 'Philippines', 'Malaysia', 'Thailand', 'My
 filter_and_save_countries(input_geopackage, output_geojson, countries_of_interest)
 
 
+
 ######################################################################################################################
         
 #FROM CHAT GPT
