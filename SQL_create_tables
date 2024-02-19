@@ -1,0 +1,21 @@
+-- Create Coral table
+CREATE TABLE Coral (
+    CORAL_ID SERIAL PRIMARY KEY,
+    NAME VARCHAR(255),
+    COUNTRY VARCHAR(255),
+    GEOMETRY POLYGON
+);
+
+-- Create Countries table
+CREATE TABLE Countries (
+    COUNTRY_ID SERIAL PRIMARY KEY,
+    NAME VARCHAR(255),
+    AREA FLOAT,
+    GEOMETRY POLYGON
+);
+
+-- Create Corals_Countries table
+CREATE TABLE Corals_Countries (
+    ID_serial SERIAL PRIMARY KEY,
+    CORAL_ID INTEGER REFERENCES Coral(CORAL_ID),
+    COUNTRY_ID INTEGER REFERENCES Countries(COUNTRY_ID)
