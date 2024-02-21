@@ -13,16 +13,3 @@ CREATE TABLE Temperature (
     Date DATE NOT NULL,
     Temperature FLOAT NOT NULL
 );
-
-
--- Insert dummy data into Corals table
-INSERT INTO Coral (Geometry) VALUES
-    (ST_GeomFromText('POINT(1 1)')),
-    (ST_GeomFromText('POINT(2 2)')),
-    (ST_GeomFromText('POINT(3 3)'));
-
--- Insert dummy data into Temperatures table
-INSERT INTO Temperature (Coral_ID, Date, Temperature) VALUES
-    (1, '2024-02-21', 25.5),
-    (2, '2024-02-21', 26.0),
-    (3, '2024-02-21', 24.8);
