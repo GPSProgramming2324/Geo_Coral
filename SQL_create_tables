@@ -1,21 +1,20 @@
--- Create Coral table
-CREATE TABLE Coral (
-    CORAL_ID SERIAL PRIMARY KEY,
-    NAME VARCHAR(255),
-    COUNTRY VARCHAR(255),
-    GEOMETRY POLYGON
+-- Create the GeoCoral database
+CREATE DATABASE IF NOT EXISTS GeoCoral;
+
+-- Switch to the GeoCoral database
+USE GeoCoral;
+
+-- Create the Corals table
+CREATE TABLE IF NOT EXISTS Corals (
+    ID INT PRIMARY KEY,
+    Geometry GEOMETRY NOT NULL
 );
 
--- Create Countries table
-CREATE TABLE Countries (
-    COUNTRY_ID SERIAL PRIMARY KEY,
-    NAME VARCHAR(255),
-    AREA FLOAT,
-    GEOMETRY POLYGON
+-- Create the Temperatures table
+CREATE TABLE IF NOT EXISTS Temperatures (
+    ID INT PRIMARY KEY,
+    Coral_ID INT,
+    Date DATE NOT NULL,
+    Temperature FLOAT NOT NULL,
+    FOREIGN KEY (Coral_ID) REFERENCES Corals(ID)
 );
-
--- Create Corals_Countries table
-CREATE TABLE Corals_Countries (
-    ID_serial SERIAL PRIMARY KEY,
-    CORAL_ID INTEGER REFERENCES Coral(CORAL_ID),
-    COUNTRY_ID INTEGER REFERENCES Countries(COUNTRY_ID)
