@@ -1,20 +1,28 @@
--- Create the GeoCoral database
-CREATE DATABASE IF NOT EXISTS GeoCoral;
+CREATE EXTENSION POSTGIS;
 
--- Switch to the GeoCoral database
-USE GeoCoral;
-
--- Create the Corals table
-CREATE TABLE IF NOT EXISTS Corals (
-    ID INT PRIMARY KEY,
-    Geometry GEOMETRY NOT NULL
+-- Create Corals table
+CREATE TABLE Coral (
+    ID SERIAL PRIMARY KEY,
+	Geometry GEOMETRY(POLYGON,4326) NOT NULL
 );
 
--- Create the Temperatures table
-CREATE TABLE IF NOT EXISTS Temperatures (
-    ID INT PRIMARY KEY,
-    Coral_ID INT,
+-- Create Temperatures table
+CREATE TABLE Temperature (
+    ID SERIAL PRIMARY KEY,
+    Coral_ID INT REFERENCES Coral(ID),
     Date DATE NOT NULL,
-    Temperature FLOAT NOT NULL,
-    FOREIGN KEY (Coral_ID) REFERENCES Corals(ID)
+    Temperature FLOAT NOT NULL
 );
+
+
+-- Insert dummy data into Corals table
+INSERT INTO Coral (Geometry) VALUES
+    (ST_GeomFromText('POINT(1 1)')),
+    (ST_GeomFromText('POINT(2 2)')),
+    (ST_GeomFromText('POINT(3 3)'));
+
+-- Insert dummy data into Temperatures table
+INSERT INTO Temperature (Coral_ID, Date, Temperature) VALUES
+    (1, '2024-02-21', 25.5),
+    (2, '2024-02-21', 26.0),
+    (3, '2024-02-21', 24.8);
