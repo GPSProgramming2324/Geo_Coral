@@ -30,8 +30,7 @@ def get_Coral(id):
         if coral:
             coral_dict = {
                 'CORAL_ID': coral[0],
-                'Geometry': coral[1],  # Adjust this based on your database schema
-                # Add other columns as needed
+                'Geometry': coral[1],   
             }
             return jsonify(coral_dict)
         else:
