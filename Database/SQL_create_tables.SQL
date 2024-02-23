@@ -11,5 +11,6 @@ CREATE TABLE Temperature (
     ID SERIAL PRIMARY KEY,
     Coral_ID INT REFERENCES Coral(ID),
     Date DATE NOT NULL,
-    Temperature FLOAT NOT NULL
+    Temperature FLOAT NOT NULL,
+	DHW FLOAT NOT NULL
 );
