@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01171b;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #00394f;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+svg {
+    width: 100%;
+    flex: 1;
+}
+
+.background {
+    fill: #01171b;
+    opacity: 1;
+    stroke: none;
+}
+
+svg path:not(.background) {
+    fill: #015c3d; /* Default fill color for non-background paths */
+    stroke: #ffffff; /* White outline */
+    stroke-width: 0.6; /* Adjust the width of the outline as needed */
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+svg path:not(.background):hover {
+    fill: #46e607; /* Hover fill color for non-background paths */
+}
+
