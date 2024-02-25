@@ -41,3 +41,23 @@ svg path:not(.background):hover {
     fill: #46e607; /* Hover fill color for non-background paths */
 }
 
+table {
+    border-collapse: collapse;
+    align-items: center;
+    align-self: center;
+    width: 60%;
+  }
+
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #f2f2f2;
+  }
+
+  td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    color: #dddddd;
+
+  }

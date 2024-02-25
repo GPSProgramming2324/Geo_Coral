@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Your header content goes here -->
+        <h1>GEO CORAL</h1>
+    </header>
+
+    <div id="map" style="height: 400px;"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script>
+        var map = L.map('map').setView([0, 0], 2);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Specify the path to your local GeoJSON file
+        var geojsonPath = 'Corals.geojson';
+
+        // Fetch the GeoJSON data
+        fetch(geojsonPath)
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data).addTo(map);
+            });
+    </script>
+
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>
