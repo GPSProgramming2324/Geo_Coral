@@ -22,43 +22,33 @@ except Exception as e:
     print(f"Error connecting to database: {e}")
 
 @app.route('/Corals/<int:id>', methods=['GET'])
-def get_coral(id):
+def get_Coral(id):
+
     try:
-        cursor.execute("SELECT * FROM temperature WHERE coral_id = %s", (id,))
-        corals = cursor.fetchall()
-
-        if not corals:
-            return jsonify({'message': 'Coral not found'}), 404
-
-        coral_list = [{
-            'CORAL_ID': coral[1],
-            'Date': coral[2],
-            'Temperature': coral[3],
-            'DHW': coral[4]
-        } for coral in corals]
-
         start_date = request.args.get('start_date')
         end_date = request.args.get('end_date')
 
         if start_date and end_date:
-            cursor.execute("SELECT * FROM temperature WHERE coral_id = %s AND date >= %s AND date <= %s", (id, start_date, end_date))
-            corals_date_range = cursor.fetchall()
+            cursor.execute("SELECT * FROM temperature WHERE coral_id = '%s' AND date >= '%s' AND date <= '%s'", (id, start_date, end_date))
 
-            if corals_date_range:
-                coral_list_date_range = [{
-                    'CORAL_ID': coral[1],
-                    'Date': coral[2],
-                    'Temperature': coral[3],
-                    'DHW': coral[4]
-                } for coral in corals_date_range]
+        else:
+            cursor.execute("SELECT * FROM temperature WHERE coral_id = '%s'", (id,))
+            
+        corals = cursor.fetchall()
 
-                return jsonify(coral_list + coral_list_date_range)
-            else:
-                return jsonify({'message': 'No corals found within the specified date range'}), 404
+        if not corals:
+            return jsonify({'message':'Coral information not found'}), 200
 
+        else:
+            coral_list = [{
+                'CORAL_ID': coral[1],
+                'Date': coral[2],
+                'Temperature': coral[3],
+                'DHW': coral[4]
+            }for coral in corals]
         return jsonify(coral_list)
-
-    except Exception as e:
+    
+    except:  
         return jsonify({'error': f"Error fetching coral data: {e}"}), 500
 
 if __name__ == '__main__':
