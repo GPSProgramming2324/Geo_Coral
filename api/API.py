@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Replace these with your PostgreSQL database credentials
 DB_HOST = "localhost"
 DB_PASS = "postgres"
-DB_NAME = "geocoral_example"
+DB_NAME = "geocoral"
 DB_USER = "postgres"
 
 try:
@@ -34,7 +34,8 @@ def get_Coral(id):
             coral_dict = {
                 'CORAL_ID':   coral[1],
                 'Date':       coral[2],
-                'Temperature':coral[3]
+                'Temperature':coral[3],
+                'DHW':        coral[4]
             }
             coral_list.append(coral_dict)
 
@@ -65,7 +66,8 @@ def get_corals_by_date():
         coral_list = [{
             'CORAL_ID': coral[1],
             'Date': coral[2],
-            'Temperature': coral[3]
+            'Temperature': coral[3],
+            'DHW':coral[4]
         } for coral in corals]
 
         return jsonify(coral_list)
