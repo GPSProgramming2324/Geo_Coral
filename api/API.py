@@ -65,7 +65,7 @@ def get_Coral(id):
     except Exception as e:
         return jsonify({'error': f"Error fetching coral data: {e}"}), 500
 
-@app.route('/Corals_by_DHW/<int:DHW>', methods=['GET'])
+@app.route('/Corals_by_DHW/<DHW>', methods=['GET'])
 def get_Coral_by_DHW(DHW):
     try:
         cursor.execute("""
