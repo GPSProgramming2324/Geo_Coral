@@ -1,0 +1,26 @@
+Requirements: 
+
+SQL requirements: 
+Create a database named geocoral
+
+Libraries: 
+-zipp
+-xarray
+-shapely
+-scipy
+-rioxarray
+-requests
+-rasterio
+-pyshp
+-psycopg2
+-pandas
+-numpy
+-netCDF4
+-matplotlib
+-geopandas
+-gdown
+-gdal
+-cartopy
+-requests
+-pandas
+-datetime
