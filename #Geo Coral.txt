@@ -22,12 +22,10 @@ Welcome to Geo Coral! This project involves extracting, tranforming and loading 
 1. Clone the repository:
 2. Navigate to the project directory
 3. Install dependencies
-4. Create the database using the file 'Database/SQL_create_tables.SQL'
+4. Create the database "geocoral" nad run the file "Database/SQL_create_tables.SQL" to create the tables
 
 ###Usage
-Once the project is installed,
-(first create the database)
-Then you can run the following command: 'python ETL_databse.python'.
+Once the project is installed run the following command: 'python ETL_databse.python'.
 This will start the project.
 
 ###Features
