@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_301b0dddc87d370f0af3bb1e8ca08095 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_301b0dddc87d370f0af3bb1e8ca08095" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_301b0dddc87d370f0af3bb1e8ca08095 = L.map(
+                "map_301b0dddc87d370f0af3bb1e8ca08095",
+                {
+                    center: [-7.5489, 131.0149],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_61f23992124559027d5bc775dd7ae763 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        
+    
+
+        function geo_json_be683d360c30210b465987b82898ff0a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_be683d360c30210b465987b82898ff0a = L.geoJson(null, {
+                onEachFeature: geo_json_be683d360c30210b465987b82898ff0a_onEachFeature,
+            
+        });
+
+        function geo_json_be683d360c30210b465987b82898ff0a_add (data) {
+            geo_json_be683d360c30210b465987b82898ff0a
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_be683d360c30210b465987b82898ff0a_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_be683d360c30210b465987b82898ff0a.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.94, Date: 2024-01-06, DHW: 4.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_75576ba30f7b3bfdce1888a8eeac6b7c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_75576ba30f7b3bfdce1888a8eeac6b7c = L.geoJson(null, {
+                onEachFeature: geo_json_75576ba30f7b3bfdce1888a8eeac6b7c_onEachFeature,
+            
+        });
+
+        function geo_json_75576ba30f7b3bfdce1888a8eeac6b7c_add (data) {
+            geo_json_75576ba30f7b3bfdce1888a8eeac6b7c
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_75576ba30f7b3bfdce1888a8eeac6b7c_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_75576ba30f7b3bfdce1888a8eeac6b7c.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.94, Date: 2024-01-06, DHW: 4.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3 = L.geoJson(null, {
+                onEachFeature: geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3_onEachFeature,
+            
+        });
+
+        function geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3_add (data) {
+            geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f99f86d14e235e5f1f6b4fdda6ec8fb3.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.69, Date: 2024-01-07, DHW: 4.04
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f9b6fc079d38d266bd95fac512f1069b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f9b6fc079d38d266bd95fac512f1069b = L.geoJson(null, {
+                onEachFeature: geo_json_f9b6fc079d38d266bd95fac512f1069b_onEachFeature,
+            
+        });
+
+        function geo_json_f9b6fc079d38d266bd95fac512f1069b_add (data) {
+            geo_json_f9b6fc079d38d266bd95fac512f1069b
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f9b6fc079d38d266bd95fac512f1069b_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f9b6fc079d38d266bd95fac512f1069b.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.68, Date: 2024-01-07, DHW: 4.09
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f9b10ea7d2b12e2872ee052e5ea86211_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f9b10ea7d2b12e2872ee052e5ea86211 = L.geoJson(null, {
+                onEachFeature: geo_json_f9b10ea7d2b12e2872ee052e5ea86211_onEachFeature,
+            
+        });
+
+        function geo_json_f9b10ea7d2b12e2872ee052e5ea86211_add (data) {
+            geo_json_f9b10ea7d2b12e2872ee052e5ea86211
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f9b10ea7d2b12e2872ee052e5ea86211_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f9b10ea7d2b12e2872ee052e5ea86211.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.73, Date: 2024-01-07, DHW: 4.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_74dab8b393be4c60750ce8363dac5d6e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_74dab8b393be4c60750ce8363dac5d6e = L.geoJson(null, {
+                onEachFeature: geo_json_74dab8b393be4c60750ce8363dac5d6e_onEachFeature,
+            
+        });
+
+        function geo_json_74dab8b393be4c60750ce8363dac5d6e_add (data) {
+            geo_json_74dab8b393be4c60750ce8363dac5d6e
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_74dab8b393be4c60750ce8363dac5d6e_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_74dab8b393be4c60750ce8363dac5d6e.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.73, Date: 2024-01-07, DHW: 4.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_dab63ab9ac35e153fa2e035d4e630ce6_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_dab63ab9ac35e153fa2e035d4e630ce6 = L.geoJson(null, {
+                onEachFeature: geo_json_dab63ab9ac35e153fa2e035d4e630ce6_onEachFeature,
+            
+        });
+
+        function geo_json_dab63ab9ac35e153fa2e035d4e630ce6_add (data) {
+            geo_json_dab63ab9ac35e153fa2e035d4e630ce6
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_dab63ab9ac35e153fa2e035d4e630ce6_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_dab63ab9ac35e153fa2e035d4e630ce6.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.66, Date: 2024-01-07, DHW: 4.09
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_517b9ff0071a54cec2ec92da8eab85bb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_517b9ff0071a54cec2ec92da8eab85bb = L.geoJson(null, {
+                onEachFeature: geo_json_517b9ff0071a54cec2ec92da8eab85bb_onEachFeature,
+            
+        });
+
+        function geo_json_517b9ff0071a54cec2ec92da8eab85bb_add (data) {
+            geo_json_517b9ff0071a54cec2ec92da8eab85bb
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_517b9ff0071a54cec2ec92da8eab85bb_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_517b9ff0071a54cec2ec92da8eab85bb.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.68, Date: 2024-01-07, DHW: 4.09
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_861c27f428b8e5bd1f7021c8a5abe185_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_861c27f428b8e5bd1f7021c8a5abe185 = L.geoJson(null, {
+                onEachFeature: geo_json_861c27f428b8e5bd1f7021c8a5abe185_onEachFeature,
+            
+        });
+
+        function geo_json_861c27f428b8e5bd1f7021c8a5abe185_add (data) {
+            geo_json_861c27f428b8e5bd1f7021c8a5abe185
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_861c27f428b8e5bd1f7021c8a5abe185_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_861c27f428b8e5bd1f7021c8a5abe185.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.74, Date: 2024-01-07, DHW: 4.15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a411ce9590177da6597d80ecf89fc85f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a411ce9590177da6597d80ecf89fc85f = L.geoJson(null, {
+                onEachFeature: geo_json_a411ce9590177da6597d80ecf89fc85f_onEachFeature,
+            
+        });
+
+        function geo_json_a411ce9590177da6597d80ecf89fc85f_add (data) {
+            geo_json_a411ce9590177da6597d80ecf89fc85f
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a411ce9590177da6597d80ecf89fc85f_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a411ce9590177da6597d80ecf89fc85f.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.66, Date: 2024-01-07, DHW: 4.09
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f276ae2682474a6c7c674a8cd728966f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f276ae2682474a6c7c674a8cd728966f = L.geoJson(null, {
+                onEachFeature: geo_json_f276ae2682474a6c7c674a8cd728966f_onEachFeature,
+            
+        });
+
+        function geo_json_f276ae2682474a6c7c674a8cd728966f_add (data) {
+            geo_json_f276ae2682474a6c7c674a8cd728966f
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f276ae2682474a6c7c674a8cd728966f_add({"coordinates": [[[131.121612105, -7.918624586], [131.117120528, -7.918624586], [131.117120528, -7.904932149], [131.121612105, -7.904932149], [131.121612105, -7.918624586]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f276ae2682474a6c7c674a8cd728966f.bindTooltip(
+                `<div>
+                     Coral ID: 50019, Temperature: 30.78, Date: 2024-01-08, DHW: 4.18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_13771dbe9d49f5d878112a598effb078_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_13771dbe9d49f5d878112a598effb078 = L.geoJson(null, {
+                onEachFeature: geo_json_13771dbe9d49f5d878112a598effb078_onEachFeature,
+            
+        });
+
+        function geo_json_13771dbe9d49f5d878112a598effb078_add (data) {
+            geo_json_13771dbe9d49f5d878112a598effb078
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_13771dbe9d49f5d878112a598effb078_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_13771dbe9d49f5d878112a598effb078.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.76, Date: 2024-01-08, DHW: 4.26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_975433a96944f665071a26ad758fee0f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_975433a96944f665071a26ad758fee0f = L.geoJson(null, {
+                onEachFeature: geo_json_975433a96944f665071a26ad758fee0f_onEachFeature,
+            
+        });
+
+        function geo_json_975433a96944f665071a26ad758fee0f_add (data) {
+            geo_json_975433a96944f665071a26ad758fee0f
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_975433a96944f665071a26ad758fee0f_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_975433a96944f665071a26ad758fee0f.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.74, Date: 2024-01-08, DHW: 4.3100000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_0bd72296e9ae510c44a29fd1a836c3c8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0bd72296e9ae510c44a29fd1a836c3c8 = L.geoJson(null, {
+                onEachFeature: geo_json_0bd72296e9ae510c44a29fd1a836c3c8_onEachFeature,
+            
+        });
+
+        function geo_json_0bd72296e9ae510c44a29fd1a836c3c8_add (data) {
+            geo_json_0bd72296e9ae510c44a29fd1a836c3c8
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_0bd72296e9ae510c44a29fd1a836c3c8_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_0bd72296e9ae510c44a29fd1a836c3c8.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.76, Date: 2024-01-08, DHW: 4.5200000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_aa7611c9f73c2b8712ad986dc774d044_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_aa7611c9f73c2b8712ad986dc774d044 = L.geoJson(null, {
+                onEachFeature: geo_json_aa7611c9f73c2b8712ad986dc774d044_onEachFeature,
+            
+        });
+
+        function geo_json_aa7611c9f73c2b8712ad986dc774d044_add (data) {
+            geo_json_aa7611c9f73c2b8712ad986dc774d044
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_aa7611c9f73c2b8712ad986dc774d044_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_aa7611c9f73c2b8712ad986dc774d044.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.76, Date: 2024-01-08, DHW: 4.5200000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_51baed72c20aaf36d06a18ec1c592b87_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_51baed72c20aaf36d06a18ec1c592b87 = L.geoJson(null, {
+                onEachFeature: geo_json_51baed72c20aaf36d06a18ec1c592b87_onEachFeature,
+            
+        });
+
+        function geo_json_51baed72c20aaf36d06a18ec1c592b87_add (data) {
+            geo_json_51baed72c20aaf36d06a18ec1c592b87
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_51baed72c20aaf36d06a18ec1c592b87_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_51baed72c20aaf36d06a18ec1c592b87.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.71, Date: 2024-01-08, DHW: 4.3100000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_1ac406efb71abd35d0702b51380dbdac_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1ac406efb71abd35d0702b51380dbdac = L.geoJson(null, {
+                onEachFeature: geo_json_1ac406efb71abd35d0702b51380dbdac_onEachFeature,
+            
+        });
+
+        function geo_json_1ac406efb71abd35d0702b51380dbdac_add (data) {
+            geo_json_1ac406efb71abd35d0702b51380dbdac
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_1ac406efb71abd35d0702b51380dbdac_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_1ac406efb71abd35d0702b51380dbdac.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.74, Date: 2024-01-08, DHW: 4.3100000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_08b584579d89d957f650d36d09972f24_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_08b584579d89d957f650d36d09972f24 = L.geoJson(null, {
+                onEachFeature: geo_json_08b584579d89d957f650d36d09972f24_onEachFeature,
+            
+        });
+
+        function geo_json_08b584579d89d957f650d36d09972f24_add (data) {
+            geo_json_08b584579d89d957f650d36d09972f24
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_08b584579d89d957f650d36d09972f24_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_08b584579d89d957f650d36d09972f24.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.74, Date: 2024-01-08, DHW: 4.38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_847c4e355563c83ec2416dda98ac55a3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_847c4e355563c83ec2416dda98ac55a3 = L.geoJson(null, {
+                onEachFeature: geo_json_847c4e355563c83ec2416dda98ac55a3_onEachFeature,
+            
+        });
+
+        function geo_json_847c4e355563c83ec2416dda98ac55a3_add (data) {
+            geo_json_847c4e355563c83ec2416dda98ac55a3
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_847c4e355563c83ec2416dda98ac55a3_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_847c4e355563c83ec2416dda98ac55a3.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.71, Date: 2024-01-08, DHW: 4.3100000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f209668c546665e6c7f0c7bc5a367098_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f209668c546665e6c7f0c7bc5a367098 = L.geoJson(null, {
+                onEachFeature: geo_json_f209668c546665e6c7f0c7bc5a367098_onEachFeature,
+            
+        });
+
+        function geo_json_f209668c546665e6c7f0c7bc5a367098_add (data) {
+            geo_json_f209668c546665e6c7f0c7bc5a367098
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f209668c546665e6c7f0c7bc5a367098_add({"coordinates": [[[131.027289, -7.653981717], [131.027289, -7.649420328], [131.036272153, -7.649420328], [131.036272153, -7.653981717], [131.027289, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f209668c546665e6c7f0c7bc5a367098.bindTooltip(
+                `<div>
+                     Coral ID: 50055, Temperature: 30.63, Date: 2024-01-08, DHW: 4.05
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_88be75bd3f1a95ba7b19d2c8a797835d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_88be75bd3f1a95ba7b19d2c8a797835d = L.geoJson(null, {
+                onEachFeature: geo_json_88be75bd3f1a95ba7b19d2c8a797835d_onEachFeature,
+            
+        });
+
+        function geo_json_88be75bd3f1a95ba7b19d2c8a797835d_add (data) {
+            geo_json_88be75bd3f1a95ba7b19d2c8a797835d
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_88be75bd3f1a95ba7b19d2c8a797835d_add({"coordinates": [[[131.027289, -7.649420328], [131.022797423, -7.649420328], [131.022797423, -7.653981717], [131.013814271, -7.653981717], [131.013814271, -7.649420328], [131.018305847, -7.649420328], [131.018305847, -7.644858986], [131.027289, -7.644858986], [131.027289, -7.649420328]]], "type": "Polygon"});
+
+        
+    
+            geo_json_88be75bd3f1a95ba7b19d2c8a797835d.bindTooltip(
+                `<div>
+                     Coral ID: 50058, Temperature: 30.63, Date: 2024-01-08, DHW: 4.05
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_9dd752951891e4d66496dcee6937d507_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9dd752951891e4d66496dcee6937d507 = L.geoJson(null, {
+                onEachFeature: geo_json_9dd752951891e4d66496dcee6937d507_onEachFeature,
+            
+        });
+
+        function geo_json_9dd752951891e4d66496dcee6937d507_add (data) {
+            geo_json_9dd752951891e4d66496dcee6937d507
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_9dd752951891e4d66496dcee6937d507_add({"coordinates": [[[131.099154223, -7.631175244], [131.099154223, -7.635736444], [131.108137375, -7.635736444], [131.108137375, -7.640297691], [131.099154223, -7.640297691], [131.099154223, -7.644858986], [131.081187917, -7.644858986], [131.081187917, -7.649420328], [131.076696341, -7.649420328], [131.076696341, -7.644858986], [131.072204764, -7.644858986], [131.072204764, -7.649420328], [131.063221611, -7.649420328], [131.063221611, -7.653981717], [131.049746882, -7.653981717], [131.049746882, -7.644858986], [131.058730035, -7.644858986], [131.058730035, -7.640297691], [131.063221611, -7.640297691], [131.063221611, -7.635736444], [131.067713188, -7.635736444], [131.067713188, -7.640297691], [131.085679493, -7.640297691], [131.085679493, -7.631175244], [131.099154223, -7.631175244]]], "type": "Polygon"});
+
+        
+    
+            geo_json_9dd752951891e4d66496dcee6937d507.bindTooltip(
+                `<div>
+                     Coral ID: 50061, Temperature: 30.64, Date: 2024-01-08, DHW: 4.05
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_81c232c2c33c33e76fdc28e2dcf84241_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_81c232c2c33c33e76fdc28e2dcf84241 = L.geoJson(null, {
+                onEachFeature: geo_json_81c232c2c33c33e76fdc28e2dcf84241_onEachFeature,
+            
+        });
+
+        function geo_json_81c232c2c33c33e76fdc28e2dcf84241_add (data) {
+            geo_json_81c232c2c33c33e76fdc28e2dcf84241
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_81c232c2c33c33e76fdc28e2dcf84241_add({"coordinates": [[[131.121612105, -7.918624586], [131.117120528, -7.918624586], [131.117120528, -7.904932149], [131.121612105, -7.904932149], [131.121612105, -7.918624586]]], "type": "Polygon"});
+
+        
+    
+            geo_json_81c232c2c33c33e76fdc28e2dcf84241.bindTooltip(
+                `<div>
+                     Coral ID: 50019, Temperature: 30.57, Date: 2024-01-09, DHW: 4.37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_36b5fe7c45e42ca55ff73e14ed5334b7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_36b5fe7c45e42ca55ff73e14ed5334b7 = L.geoJson(null, {
+                onEachFeature: geo_json_36b5fe7c45e42ca55ff73e14ed5334b7_onEachFeature,
+            
+        });
+
+        function geo_json_36b5fe7c45e42ca55ff73e14ed5334b7_add (data) {
+            geo_json_36b5fe7c45e42ca55ff73e14ed5334b7
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_36b5fe7c45e42ca55ff73e14ed5334b7_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_36b5fe7c45e42ca55ff73e14ed5334b7.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.56, Date: 2024-01-09, DHW: 4.46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a63838d71a888712d32e756c7c51c69c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a63838d71a888712d32e756c7c51c69c = L.geoJson(null, {
+                onEachFeature: geo_json_a63838d71a888712d32e756c7c51c69c_onEachFeature,
+            
+        });
+
+        function geo_json_a63838d71a888712d32e756c7c51c69c_add (data) {
+            geo_json_a63838d71a888712d32e756c7c51c69c
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a63838d71a888712d32e756c7c51c69c_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a63838d71a888712d32e756c7c51c69c.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.54, Date: 2024-01-09, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_593c11bc7c308cec7235d4dbf5798436_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_593c11bc7c308cec7235d4dbf5798436 = L.geoJson(null, {
+                onEachFeature: geo_json_593c11bc7c308cec7235d4dbf5798436_onEachFeature,
+            
+        });
+
+        function geo_json_593c11bc7c308cec7235d4dbf5798436_add (data) {
+            geo_json_593c11bc7c308cec7235d4dbf5798436
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_593c11bc7c308cec7235d4dbf5798436_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_593c11bc7c308cec7235d4dbf5798436.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.56, Date: 2024-01-09, DHW: 4.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f0b493e7b306587f1b29549cab15268e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f0b493e7b306587f1b29549cab15268e = L.geoJson(null, {
+                onEachFeature: geo_json_f0b493e7b306587f1b29549cab15268e_onEachFeature,
+            
+        });
+
+        function geo_json_f0b493e7b306587f1b29549cab15268e_add (data) {
+            geo_json_f0b493e7b306587f1b29549cab15268e
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f0b493e7b306587f1b29549cab15268e_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f0b493e7b306587f1b29549cab15268e.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.56, Date: 2024-01-09, DHW: 4.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_691c2b06624254ee5651d1cb418a27d4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_691c2b06624254ee5651d1cb418a27d4 = L.geoJson(null, {
+                onEachFeature: geo_json_691c2b06624254ee5651d1cb418a27d4_onEachFeature,
+            
+        });
+
+        function geo_json_691c2b06624254ee5651d1cb418a27d4_add (data) {
+            geo_json_691c2b06624254ee5651d1cb418a27d4
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_691c2b06624254ee5651d1cb418a27d4_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_691c2b06624254ee5651d1cb418a27d4.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.51, Date: 2024-01-09, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8 = L.geoJson(null, {
+                onEachFeature: geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8_onEachFeature,
+            
+        });
+
+        function geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8_add (data) {
+            geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_6fa0d1e64f56e0fb6d16eb55d81f00c8.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.54, Date: 2024-01-09, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_e8b1620c142f202b28db39befc85b605_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e8b1620c142f202b28db39befc85b605 = L.geoJson(null, {
+                onEachFeature: geo_json_e8b1620c142f202b28db39befc85b605_onEachFeature,
+            
+        });
+
+        function geo_json_e8b1620c142f202b28db39befc85b605_add (data) {
+            geo_json_e8b1620c142f202b28db39befc85b605
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_e8b1620c142f202b28db39befc85b605_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_e8b1620c142f202b28db39befc85b605.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.54, Date: 2024-01-09, DHW: 4.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_34311a702fccd9444fe8609778448dc7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_34311a702fccd9444fe8609778448dc7 = L.geoJson(null, {
+                onEachFeature: geo_json_34311a702fccd9444fe8609778448dc7_onEachFeature,
+            
+        });
+
+        function geo_json_34311a702fccd9444fe8609778448dc7_add (data) {
+            geo_json_34311a702fccd9444fe8609778448dc7
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_34311a702fccd9444fe8609778448dc7_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_34311a702fccd9444fe8609778448dc7.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.51, Date: 2024-01-09, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_6d711bec1f62f8711cc759bb70e1d8e5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6d711bec1f62f8711cc759bb70e1d8e5 = L.geoJson(null, {
+                onEachFeature: geo_json_6d711bec1f62f8711cc759bb70e1d8e5_onEachFeature,
+            
+        });
+
+        function geo_json_6d711bec1f62f8711cc759bb70e1d8e5_add (data) {
+            geo_json_6d711bec1f62f8711cc759bb70e1d8e5
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_6d711bec1f62f8711cc759bb70e1d8e5_add({"coordinates": [[[130.932965895, -7.667666172], [130.932965895, -7.672227751], [130.946440624, -7.672227751], [130.946440624, -7.676789379], [130.941949048, -7.676789379], [130.941949048, -7.699598232], [130.937457471, -7.699598232], [130.937457471, -7.685912777], [130.923982742, -7.685912777], [130.923982742, -7.681351054], [130.919491166, -7.681351054], [130.919491166, -7.672227751], [130.923982742, -7.672227751], [130.923982742, -7.667666172], [130.932965895, -7.667666172]], [[130.932965895, -7.676789379], [130.932965895, -7.681351054], [130.937457471, -7.681351054], [130.937457471, -7.676789379], [130.932965895, -7.676789379]]], "type": "Polygon"});
+
+        
+    
+            geo_json_6d711bec1f62f8711cc759bb70e1d8e5.bindTooltip(
+                `<div>
+                     Coral ID: 50053, Temperature: 30.44, Date: 2024-01-09, DHW: 4.16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_61168e9ce6763fc25d083af42b8d0ad8_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_61168e9ce6763fc25d083af42b8d0ad8 = L.geoJson(null, {
+                onEachFeature: geo_json_61168e9ce6763fc25d083af42b8d0ad8_onEachFeature,
+            
+        });
+
+        function geo_json_61168e9ce6763fc25d083af42b8d0ad8_add (data) {
+            geo_json_61168e9ce6763fc25d083af42b8d0ad8
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_61168e9ce6763fc25d083af42b8d0ad8_add({"coordinates": [[[131.000339541, -7.667666172], [130.991356389, -7.667666172], [130.991356389, -7.663104639], [131.000339541, -7.663104639], [131.000339541, -7.667666172]]], "type": "Polygon"});
+
+        
+    
+            geo_json_61168e9ce6763fc25d083af42b8d0ad8.bindTooltip(
+                `<div>
+                     Coral ID: 50054, Temperature: 30.43, Date: 2024-01-09, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_7dcf6a8913f126a41ab50bce06a9d651_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7dcf6a8913f126a41ab50bce06a9d651 = L.geoJson(null, {
+                onEachFeature: geo_json_7dcf6a8913f126a41ab50bce06a9d651_onEachFeature,
+            
+        });
+
+        function geo_json_7dcf6a8913f126a41ab50bce06a9d651_add (data) {
+            geo_json_7dcf6a8913f126a41ab50bce06a9d651
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_7dcf6a8913f126a41ab50bce06a9d651_add({"coordinates": [[[131.027289, -7.653981717], [131.027289, -7.649420328], [131.036272153, -7.649420328], [131.036272153, -7.653981717], [131.027289, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_7dcf6a8913f126a41ab50bce06a9d651.bindTooltip(
+                `<div>
+                     Coral ID: 50055, Temperature: 30.44, Date: 2024-01-09, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_03227c0bdcac697bcaaab9d469c88092_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_03227c0bdcac697bcaaab9d469c88092 = L.geoJson(null, {
+                onEachFeature: geo_json_03227c0bdcac697bcaaab9d469c88092_onEachFeature,
+            
+        });
+
+        function geo_json_03227c0bdcac697bcaaab9d469c88092_add (data) {
+            geo_json_03227c0bdcac697bcaaab9d469c88092
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_03227c0bdcac697bcaaab9d469c88092_add({"coordinates": [[[131.121612105, -7.653981717], [131.117120528, -7.653981717], [131.117120528, -7.649420328], [131.121612105, -7.649420328], [131.121612105, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_03227c0bdcac697bcaaab9d469c88092.bindTooltip(
+                `<div>
+                     Coral ID: 50056, Temperature: 30.44, Date: 2024-01-09, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_08ab2be019202765006bdba6b0f4896a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_08ab2be019202765006bdba6b0f4896a = L.geoJson(null, {
+                onEachFeature: geo_json_08ab2be019202765006bdba6b0f4896a_onEachFeature,
+            
+        });
+
+        function geo_json_08ab2be019202765006bdba6b0f4896a_add (data) {
+            geo_json_08ab2be019202765006bdba6b0f4896a
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_08ab2be019202765006bdba6b0f4896a_add({"coordinates": [[[131.027289, -7.649420328], [131.022797423, -7.649420328], [131.022797423, -7.653981717], [131.013814271, -7.653981717], [131.013814271, -7.649420328], [131.018305847, -7.649420328], [131.018305847, -7.644858986], [131.027289, -7.644858986], [131.027289, -7.649420328]]], "type": "Polygon"});
+
+        
+    
+            geo_json_08ab2be019202765006bdba6b0f4896a.bindTooltip(
+                `<div>
+                     Coral ID: 50058, Temperature: 30.44, Date: 2024-01-09, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_c6e210f81d70d1408f98e4740a7e6c2f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c6e210f81d70d1408f98e4740a7e6c2f = L.geoJson(null, {
+                onEachFeature: geo_json_c6e210f81d70d1408f98e4740a7e6c2f_onEachFeature,
+            
+        });
+
+        function geo_json_c6e210f81d70d1408f98e4740a7e6c2f_add (data) {
+            geo_json_c6e210f81d70d1408f98e4740a7e6c2f
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_c6e210f81d70d1408f98e4740a7e6c2f_add({"coordinates": [[[131.126103681, -7.640297691], [131.117120528, -7.640297691], [131.117120528, -7.635736444], [131.126103681, -7.635736444], [131.126103681, -7.640297691]]], "type": "Polygon"});
+
+        
+    
+            geo_json_c6e210f81d70d1408f98e4740a7e6c2f.bindTooltip(
+                `<div>
+                     Coral ID: 50060, Temperature: 30.44, Date: 2024-01-09, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_d005f54e31e55690e1cbdce9e25aa53c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d005f54e31e55690e1cbdce9e25aa53c = L.geoJson(null, {
+                onEachFeature: geo_json_d005f54e31e55690e1cbdce9e25aa53c_onEachFeature,
+            
+        });
+
+        function geo_json_d005f54e31e55690e1cbdce9e25aa53c_add (data) {
+            geo_json_d005f54e31e55690e1cbdce9e25aa53c
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_d005f54e31e55690e1cbdce9e25aa53c_add({"coordinates": [[[131.099154223, -7.631175244], [131.099154223, -7.635736444], [131.108137375, -7.635736444], [131.108137375, -7.640297691], [131.099154223, -7.640297691], [131.099154223, -7.644858986], [131.081187917, -7.644858986], [131.081187917, -7.649420328], [131.076696341, -7.649420328], [131.076696341, -7.644858986], [131.072204764, -7.644858986], [131.072204764, -7.649420328], [131.063221611, -7.649420328], [131.063221611, -7.653981717], [131.049746882, -7.653981717], [131.049746882, -7.644858986], [131.058730035, -7.644858986], [131.058730035, -7.640297691], [131.063221611, -7.640297691], [131.063221611, -7.635736444], [131.067713188, -7.635736444], [131.067713188, -7.640297691], [131.085679493, -7.640297691], [131.085679493, -7.631175244], [131.099154223, -7.631175244]]], "type": "Polygon"});
+
+        
+    
+            geo_json_d005f54e31e55690e1cbdce9e25aa53c.bindTooltip(
+                `<div>
+                     Coral ID: 50061, Temperature: 30.44, Date: 2024-01-09, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_1e0f0e14d39da3d7cc2531a218b42f21_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1e0f0e14d39da3d7cc2531a218b42f21 = L.geoJson(null, {
+                onEachFeature: geo_json_1e0f0e14d39da3d7cc2531a218b42f21_onEachFeature,
+            
+        });
+
+        function geo_json_1e0f0e14d39da3d7cc2531a218b42f21_add (data) {
+            geo_json_1e0f0e14d39da3d7cc2531a218b42f21
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_1e0f0e14d39da3d7cc2531a218b42f21_add({"coordinates": [[[131.121612105, -7.918624586], [131.117120528, -7.918624586], [131.117120528, -7.904932149], [131.121612105, -7.904932149], [131.121612105, -7.918624586]]], "type": "Polygon"});
+
+        
+    
+            geo_json_1e0f0e14d39da3d7cc2531a218b42f21.bindTooltip(
+                `<div>
+                     Coral ID: 50019, Temperature: 30.27, Date: 2024-01-10, DHW: 4.5200000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_fe89d41d959fadf81a9bb71f4a976ca1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_fe89d41d959fadf81a9bb71f4a976ca1 = L.geoJson(null, {
+                onEachFeature: geo_json_fe89d41d959fadf81a9bb71f4a976ca1_onEachFeature,
+            
+        });
+
+        function geo_json_fe89d41d959fadf81a9bb71f4a976ca1_add (data) {
+            geo_json_fe89d41d959fadf81a9bb71f4a976ca1
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_fe89d41d959fadf81a9bb71f4a976ca1_add({"coordinates": [[[130.941949048, -7.882112404], [130.932965895, -7.882112404], [130.932965895, -7.872984849], [130.946440624, -7.872984849], [130.946440624, -7.877548602], [130.941949048, -7.877548602], [130.941949048, -7.882112404]]], "type": "Polygon"});
+
+        
+    
+            geo_json_fe89d41d959fadf81a9bb71f4a976ca1.bindTooltip(
+                `<div>
+                     Coral ID: 50023, Temperature: 30.24, Date: 2024-01-10, DHW: 4.13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f380387e9ce5280cbd671a4d0126a916_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f380387e9ce5280cbd671a4d0126a916 = L.geoJson(null, {
+                onEachFeature: geo_json_f380387e9ce5280cbd671a4d0126a916_onEachFeature,
+            
+        });
+
+        function geo_json_f380387e9ce5280cbd671a4d0126a916_add (data) {
+            geo_json_f380387e9ce5280cbd671a4d0126a916
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f380387e9ce5280cbd671a4d0126a916_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f380387e9ce5280cbd671a4d0126a916.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.23, Date: 2024-01-10, DHW: 4.6000000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_31375e97f671d28c33b683ace0772333_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_31375e97f671d28c33b683ace0772333 = L.geoJson(null, {
+                onEachFeature: geo_json_31375e97f671d28c33b683ace0772333_onEachFeature,
+            
+        });
+
+        function geo_json_31375e97f671d28c33b683ace0772333_add (data) {
+            geo_json_31375e97f671d28c33b683ace0772333
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_31375e97f671d28c33b683ace0772333_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_31375e97f671d28c33b683ace0772333.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.2, Date: 2024-01-10, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_4b606f333aa1e7ede20ae26e894d2c81_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4b606f333aa1e7ede20ae26e894d2c81 = L.geoJson(null, {
+                onEachFeature: geo_json_4b606f333aa1e7ede20ae26e894d2c81_onEachFeature,
+            
+        });
+
+        function geo_json_4b606f333aa1e7ede20ae26e894d2c81_add (data) {
+            geo_json_4b606f333aa1e7ede20ae26e894d2c81
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_4b606f333aa1e7ede20ae26e894d2c81_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_4b606f333aa1e7ede20ae26e894d2c81.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.21, Date: 2024-01-10, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f05cb080fea46decf616070760640ea0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f05cb080fea46decf616070760640ea0 = L.geoJson(null, {
+                onEachFeature: geo_json_f05cb080fea46decf616070760640ea0_onEachFeature,
+            
+        });
+
+        function geo_json_f05cb080fea46decf616070760640ea0_add (data) {
+            geo_json_f05cb080fea46decf616070760640ea0
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f05cb080fea46decf616070760640ea0_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f05cb080fea46decf616070760640ea0.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.21, Date: 2024-01-10, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_242563de57de5ea5f2e9ef808a7af032_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_242563de57de5ea5f2e9ef808a7af032 = L.geoJson(null, {
+                onEachFeature: geo_json_242563de57de5ea5f2e9ef808a7af032_onEachFeature,
+            
+        });
+
+        function geo_json_242563de57de5ea5f2e9ef808a7af032_add (data) {
+            geo_json_242563de57de5ea5f2e9ef808a7af032
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_242563de57de5ea5f2e9ef808a7af032_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_242563de57de5ea5f2e9ef808a7af032.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.16, Date: 2024-01-10, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_380ffd673daaece54acbfa62a7f3a8df_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_380ffd673daaece54acbfa62a7f3a8df = L.geoJson(null, {
+                onEachFeature: geo_json_380ffd673daaece54acbfa62a7f3a8df_onEachFeature,
+            
+        });
+
+        function geo_json_380ffd673daaece54acbfa62a7f3a8df_add (data) {
+            geo_json_380ffd673daaece54acbfa62a7f3a8df
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_380ffd673daaece54acbfa62a7f3a8df_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_380ffd673daaece54acbfa62a7f3a8df.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.2, Date: 2024-01-10, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a426c3b9bbcad1a179b39bb6452fcfab_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a426c3b9bbcad1a179b39bb6452fcfab = L.geoJson(null, {
+                onEachFeature: geo_json_a426c3b9bbcad1a179b39bb6452fcfab_onEachFeature,
+            
+        });
+
+        function geo_json_a426c3b9bbcad1a179b39bb6452fcfab_add (data) {
+            geo_json_a426c3b9bbcad1a179b39bb6452fcfab
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a426c3b9bbcad1a179b39bb6452fcfab_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a426c3b9bbcad1a179b39bb6452fcfab.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.19, Date: 2024-01-10, DHW: 4.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_cdc5e8128aa703d090ef74615c34d9bf_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cdc5e8128aa703d090ef74615c34d9bf = L.geoJson(null, {
+                onEachFeature: geo_json_cdc5e8128aa703d090ef74615c34d9bf_onEachFeature,
+            
+        });
+
+        function geo_json_cdc5e8128aa703d090ef74615c34d9bf_add (data) {
+            geo_json_cdc5e8128aa703d090ef74615c34d9bf
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_cdc5e8128aa703d090ef74615c34d9bf_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_cdc5e8128aa703d090ef74615c34d9bf.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.16, Date: 2024-01-10, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_437ee86a77e73a1f8a01d2d31995e3fe_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_437ee86a77e73a1f8a01d2d31995e3fe = L.geoJson(null, {
+                onEachFeature: geo_json_437ee86a77e73a1f8a01d2d31995e3fe_onEachFeature,
+            
+        });
+
+        function geo_json_437ee86a77e73a1f8a01d2d31995e3fe_add (data) {
+            geo_json_437ee86a77e73a1f8a01d2d31995e3fe
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_437ee86a77e73a1f8a01d2d31995e3fe_add({"coordinates": [[[130.932965895, -7.667666172], [130.932965895, -7.672227751], [130.946440624, -7.672227751], [130.946440624, -7.676789379], [130.941949048, -7.676789379], [130.941949048, -7.699598232], [130.937457471, -7.699598232], [130.937457471, -7.685912777], [130.923982742, -7.685912777], [130.923982742, -7.681351054], [130.919491166, -7.681351054], [130.919491166, -7.672227751], [130.923982742, -7.672227751], [130.923982742, -7.667666172], [130.932965895, -7.667666172]], [[130.932965895, -7.676789379], [130.932965895, -7.681351054], [130.937457471, -7.681351054], [130.937457471, -7.676789379], [130.932965895, -7.676789379]]], "type": "Polygon"});
+
+        
+    
+            geo_json_437ee86a77e73a1f8a01d2d31995e3fe.bindTooltip(
+                `<div>
+                     Coral ID: 50053, Temperature: 30.13, Date: 2024-01-10, DHW: 4.16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a5e23130252b6b3016e837f3c9e7d691_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a5e23130252b6b3016e837f3c9e7d691 = L.geoJson(null, {
+                onEachFeature: geo_json_a5e23130252b6b3016e837f3c9e7d691_onEachFeature,
+            
+        });
+
+        function geo_json_a5e23130252b6b3016e837f3c9e7d691_add (data) {
+            geo_json_a5e23130252b6b3016e837f3c9e7d691
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a5e23130252b6b3016e837f3c9e7d691_add({"coordinates": [[[131.000339541, -7.667666172], [130.991356389, -7.667666172], [130.991356389, -7.663104639], [131.000339541, -7.663104639], [131.000339541, -7.667666172]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a5e23130252b6b3016e837f3c9e7d691.bindTooltip(
+                `<div>
+                     Coral ID: 50054, Temperature: 30.11, Date: 2024-01-10, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_1c02c563fd11e897a5d01434144c3381_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_1c02c563fd11e897a5d01434144c3381 = L.geoJson(null, {
+                onEachFeature: geo_json_1c02c563fd11e897a5d01434144c3381_onEachFeature,
+            
+        });
+
+        function geo_json_1c02c563fd11e897a5d01434144c3381_add (data) {
+            geo_json_1c02c563fd11e897a5d01434144c3381
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_1c02c563fd11e897a5d01434144c3381_add({"coordinates": [[[131.027289, -7.653981717], [131.027289, -7.649420328], [131.036272153, -7.649420328], [131.036272153, -7.653981717], [131.027289, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_1c02c563fd11e897a5d01434144c3381.bindTooltip(
+                `<div>
+                     Coral ID: 50055, Temperature: 30.11, Date: 2024-01-10, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_33da19cdaef5cec7ae4de6098d652681_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_33da19cdaef5cec7ae4de6098d652681 = L.geoJson(null, {
+                onEachFeature: geo_json_33da19cdaef5cec7ae4de6098d652681_onEachFeature,
+            
+        });
+
+        function geo_json_33da19cdaef5cec7ae4de6098d652681_add (data) {
+            geo_json_33da19cdaef5cec7ae4de6098d652681
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_33da19cdaef5cec7ae4de6098d652681_add({"coordinates": [[[131.121612105, -7.653981717], [131.117120528, -7.653981717], [131.117120528, -7.649420328], [131.121612105, -7.649420328], [131.121612105, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_33da19cdaef5cec7ae4de6098d652681.bindTooltip(
+                `<div>
+                     Coral ID: 50056, Temperature: 30.13, Date: 2024-01-10, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_4f829da9d00c146edc0e2da133ef08af_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4f829da9d00c146edc0e2da133ef08af = L.geoJson(null, {
+                onEachFeature: geo_json_4f829da9d00c146edc0e2da133ef08af_onEachFeature,
+            
+        });
+
+        function geo_json_4f829da9d00c146edc0e2da133ef08af_add (data) {
+            geo_json_4f829da9d00c146edc0e2da133ef08af
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_4f829da9d00c146edc0e2da133ef08af_add({"coordinates": [[[131.027289, -7.649420328], [131.022797423, -7.649420328], [131.022797423, -7.653981717], [131.013814271, -7.653981717], [131.013814271, -7.649420328], [131.018305847, -7.649420328], [131.018305847, -7.644858986], [131.027289, -7.644858986], [131.027289, -7.649420328]]], "type": "Polygon"});
+
+        
+    
+            geo_json_4f829da9d00c146edc0e2da133ef08af.bindTooltip(
+                `<div>
+                     Coral ID: 50058, Temperature: 30.11, Date: 2024-01-10, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_61d18798daf7c277d6493a551095b353_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_61d18798daf7c277d6493a551095b353 = L.geoJson(null, {
+                onEachFeature: geo_json_61d18798daf7c277d6493a551095b353_onEachFeature,
+            
+        });
+
+        function geo_json_61d18798daf7c277d6493a551095b353_add (data) {
+            geo_json_61d18798daf7c277d6493a551095b353
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_61d18798daf7c277d6493a551095b353_add({"coordinates": [[[131.126103681, -7.640297691], [131.117120528, -7.640297691], [131.117120528, -7.635736444], [131.126103681, -7.635736444], [131.126103681, -7.640297691]]], "type": "Polygon"});
+
+        
+    
+            geo_json_61d18798daf7c277d6493a551095b353.bindTooltip(
+                `<div>
+                     Coral ID: 50060, Temperature: 30.14, Date: 2024-01-10, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_872049d9d07f5ca7c900e02e037ea798_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_872049d9d07f5ca7c900e02e037ea798 = L.geoJson(null, {
+                onEachFeature: geo_json_872049d9d07f5ca7c900e02e037ea798_onEachFeature,
+            
+        });
+
+        function geo_json_872049d9d07f5ca7c900e02e037ea798_add (data) {
+            geo_json_872049d9d07f5ca7c900e02e037ea798
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_872049d9d07f5ca7c900e02e037ea798_add({"coordinates": [[[131.099154223, -7.631175244], [131.099154223, -7.635736444], [131.108137375, -7.635736444], [131.108137375, -7.640297691], [131.099154223, -7.640297691], [131.099154223, -7.644858986], [131.081187917, -7.644858986], [131.081187917, -7.649420328], [131.076696341, -7.649420328], [131.076696341, -7.644858986], [131.072204764, -7.644858986], [131.072204764, -7.649420328], [131.063221611, -7.649420328], [131.063221611, -7.653981717], [131.049746882, -7.653981717], [131.049746882, -7.644858986], [131.058730035, -7.644858986], [131.058730035, -7.640297691], [131.063221611, -7.640297691], [131.063221611, -7.635736444], [131.067713188, -7.635736444], [131.067713188, -7.640297691], [131.085679493, -7.640297691], [131.085679493, -7.631175244], [131.099154223, -7.631175244]]], "type": "Polygon"});
+
+        
+    
+            geo_json_872049d9d07f5ca7c900e02e037ea798.bindTooltip(
+                `<div>
+                     Coral ID: 50061, Temperature: 30.13, Date: 2024-01-10, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_0da844dc1fb7d5a1578f6952aff368d9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0da844dc1fb7d5a1578f6952aff368d9 = L.geoJson(null, {
+                onEachFeature: geo_json_0da844dc1fb7d5a1578f6952aff368d9_onEachFeature,
+            
+        });
+
+        function geo_json_0da844dc1fb7d5a1578f6952aff368d9_add (data) {
+            geo_json_0da844dc1fb7d5a1578f6952aff368d9
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_0da844dc1fb7d5a1578f6952aff368d9_add({"coordinates": [[[131.108137375, -7.412292811], [131.108137375, -7.416851771], [131.094662646, -7.416851771], [131.094662646, -7.421410776], [131.076696341, -7.421410776], [131.076696341, -7.416851771], [131.067713188, -7.416851771], [131.067713188, -7.421410776], [131.049746882, -7.421410776], [131.049746882, -7.425969828], [131.031780576, -7.425969828], [131.031780576, -7.421410776], [131.022797423, -7.421410776], [131.022797423, -7.425969828], [131.018305847, -7.425969828], [131.018305847, -7.421410776], [131.013814271, -7.421410776], [131.013814271, -7.425969828], [131.004831118, -7.425969828], [131.004831118, -7.430528925], [131.000339541, -7.430528925], [131.000339541, -7.425969828], [130.991356389, -7.425969828], [130.991356389, -7.430528925], [130.982373236, -7.430528925], [130.982373236, -7.444206494], [130.977881659, -7.444206494], [130.977881659, -7.453325105], [130.973390083, -7.453325105], [130.973390083, -7.47156288], [130.968898506, -7.47156288], [130.968898506, -7.489801396], [130.96440693, -7.489801396], [130.96440693, -7.494361141], [130.959915354, -7.494361141], [130.959915354, -7.485241698], [130.96440693, -7.485241698], [130.96440693, -7.448765776], [130.968898506, -7.448765776], [130.968898506, -7.435088069], [130.973390083, -7.435088069], [130.973390083, -7.430528925], [130.977881659, -7.430528925], [130.977881659, -7.425969828], [130.986864812, -7.425969828], [130.986864812, -7.421410776], [130.995847965, -7.421410776], [130.995847965, -7.416851771], [131.009322694, -7.416851771], [131.009322694, -7.412292811], [131.013814271, -7.412292811], [131.013814271, -7.407733897], [131.022797423, -7.407733897], [131.022797423, -7.40317503], [131.031780576, -7.40317503], [131.031780576, -7.407733897], [131.045255306, -7.407733897], [131.045255306, -7.412292811], [131.067713188, -7.412292811], [131.067713188, -7.407733897], [131.072204764, -7.407733897], [131.072204764, -7.412292811], [131.081187917, -7.412292811], [131.081187917, -7.416851771], [131.09017107, -7.416851771], [131.09017107, -7.412292811], [131.108137375, -7.412292811]], [[131.022797423, -7.416851771], [131.022797423, -7.412292811], [131.018305847, -7.412292811], [131.018305847, -7.416851771], [131.022797423, -7.416851771]]], "type": "Polygon"});
+
+        
+    
+            geo_json_0da844dc1fb7d5a1578f6952aff368d9.bindTooltip(
+                `<div>
+                     Coral ID: 50115, Temperature: 30.19, Date: 2024-01-10, DHW: 4.05
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5 = L.geoJson(null, {
+                onEachFeature: geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5_onEachFeature,
+            
+        });
+
+        function geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5_add (data) {
+            geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5_add({"coordinates": [[[131.121612105, -7.918624586], [131.117120528, -7.918624586], [131.117120528, -7.904932149], [131.121612105, -7.904932149], [131.121612105, -7.918624586]]], "type": "Polygon"});
+
+        
+    
+            geo_json_00451a4b24a67bd92ddd5f0a3e12a8d5.bindTooltip(
+                `<div>
+                     Coral ID: 50019, Temperature: 30.21, Date: 2024-01-11, DHW: 4.5200000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_7f78b037193171fc9a861acc3cd34f07_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7f78b037193171fc9a861acc3cd34f07 = L.geoJson(null, {
+                onEachFeature: geo_json_7f78b037193171fc9a861acc3cd34f07_onEachFeature,
+            
+        });
+
+        function geo_json_7f78b037193171fc9a861acc3cd34f07_add (data) {
+            geo_json_7f78b037193171fc9a861acc3cd34f07
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_7f78b037193171fc9a861acc3cd34f07_add({"coordinates": [[[130.941949048, -7.882112404], [130.932965895, -7.882112404], [130.932965895, -7.872984849], [130.946440624, -7.872984849], [130.946440624, -7.877548602], [130.941949048, -7.877548602], [130.941949048, -7.882112404]]], "type": "Polygon"});
+
+        
+    
+            geo_json_7f78b037193171fc9a861acc3cd34f07.bindTooltip(
+                `<div>
+                     Coral ID: 50023, Temperature: 30.2, Date: 2024-01-11, DHW: 4.13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27 = L.geoJson(null, {
+                onEachFeature: geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27_onEachFeature,
+            
+        });
+
+        function geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27_add (data) {
+            geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_ea3e6fef1ac1142ef6ed7587a2df0a27.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.2, Date: 2024-01-11, DHW: 4.6000000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_717ed80798a7c7b7fb3f766ee4dd43bb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_717ed80798a7c7b7fb3f766ee4dd43bb = L.geoJson(null, {
+                onEachFeature: geo_json_717ed80798a7c7b7fb3f766ee4dd43bb_onEachFeature,
+            
+        });
+
+        function geo_json_717ed80798a7c7b7fb3f766ee4dd43bb_add (data) {
+            geo_json_717ed80798a7c7b7fb3f766ee4dd43bb
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_717ed80798a7c7b7fb3f766ee4dd43bb_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_717ed80798a7c7b7fb3f766ee4dd43bb.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.18, Date: 2024-01-11, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_5f1d675ba5e03e0d5e90ac3409e3d989_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5f1d675ba5e03e0d5e90ac3409e3d989 = L.geoJson(null, {
+                onEachFeature: geo_json_5f1d675ba5e03e0d5e90ac3409e3d989_onEachFeature,
+            
+        });
+
+        function geo_json_5f1d675ba5e03e0d5e90ac3409e3d989_add (data) {
+            geo_json_5f1d675ba5e03e0d5e90ac3409e3d989
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_5f1d675ba5e03e0d5e90ac3409e3d989_add({"coordinates": [[[130.807201755, -7.777157297], [130.807201755, -7.781720028], [130.820676485, -7.781720028], [130.820676485, -7.790845636], [130.825168061, -7.790845636], [130.825168061, -7.809097433], [130.820676485, -7.809097433], [130.820676485, -7.813660503], [130.816184908, -7.813660503], [130.816184908, -7.82278679], [130.807201755, -7.82278679], [130.807201755, -7.827350006], [130.798218602, -7.827350006], [130.798218602, -7.831913271], [130.780252297, -7.831913271], [130.780252297, -7.827350006], [130.771269144, -7.827350006], [130.771269144, -7.82278679], [130.766777568, -7.82278679], [130.766777568, -7.818223622], [130.762285991, -7.818223622], [130.762285991, -7.804534411], [130.780252297, -7.804534411], [130.780252297, -7.799971437], [130.784743873, -7.799971437], [130.784743873, -7.786282808], [130.78923545, -7.786282808], [130.78923545, -7.781720028], [130.793727026, -7.781720028], [130.793727026, -7.777157297], [130.807201755, -7.777157297]], [[130.802710179, -7.786282808], [130.802710179, -7.799971437], [130.807201755, -7.799971437], [130.807201755, -7.795408512], [130.811693332, -7.795408512], [130.811693332, -7.786282808], [130.802710179, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_5f1d675ba5e03e0d5e90ac3409e3d989.bindTooltip(
+                `<div>
+                     Coral ID: 50031, Temperature: 30.2, Date: 2024-01-11, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_ce2ac761f0d8e848a313e37d32267aae_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ce2ac761f0d8e848a313e37d32267aae = L.geoJson(null, {
+                onEachFeature: geo_json_ce2ac761f0d8e848a313e37d32267aae_onEachFeature,
+            
+        });
+
+        function geo_json_ce2ac761f0d8e848a313e37d32267aae_add (data) {
+            geo_json_ce2ac761f0d8e848a313e37d32267aae
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_ce2ac761f0d8e848a313e37d32267aae_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_ce2ac761f0d8e848a313e37d32267aae.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.17, Date: 2024-01-11, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_99d915fbfd4ba79428dc3859974755f2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_99d915fbfd4ba79428dc3859974755f2 = L.geoJson(null, {
+                onEachFeature: geo_json_99d915fbfd4ba79428dc3859974755f2_onEachFeature,
+            
+        });
+
+        function geo_json_99d915fbfd4ba79428dc3859974755f2_add (data) {
+            geo_json_99d915fbfd4ba79428dc3859974755f2
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_99d915fbfd4ba79428dc3859974755f2_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_99d915fbfd4ba79428dc3859974755f2.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.17, Date: 2024-01-11, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73 = L.geoJson(null, {
+                onEachFeature: geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73_onEachFeature,
+            
+        });
+
+        function geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73_add (data) {
+            geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_bdfd3b96ea743d08b4bbab8fd2f8df73.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.16, Date: 2024-01-11, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_8cd0906182d8836ee9ba84a6c2147f20_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8cd0906182d8836ee9ba84a6c2147f20 = L.geoJson(null, {
+                onEachFeature: geo_json_8cd0906182d8836ee9ba84a6c2147f20_onEachFeature,
+            
+        });
+
+        function geo_json_8cd0906182d8836ee9ba84a6c2147f20_add (data) {
+            geo_json_8cd0906182d8836ee9ba84a6c2147f20
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_8cd0906182d8836ee9ba84a6c2147f20_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_8cd0906182d8836ee9ba84a6c2147f20.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.18, Date: 2024-01-11, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_57e72282233c8e86ef31c320561c7537_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_57e72282233c8e86ef31c320561c7537 = L.geoJson(null, {
+                onEachFeature: geo_json_57e72282233c8e86ef31c320561c7537_onEachFeature,
+            
+        });
+
+        function geo_json_57e72282233c8e86ef31c320561c7537_add (data) {
+            geo_json_57e72282233c8e86ef31c320561c7537
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_57e72282233c8e86ef31c320561c7537_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_57e72282233c8e86ef31c320561c7537.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.16, Date: 2024-01-11, DHW: 4.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_d399c165d2d1a82763d4a38183c6e70c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d399c165d2d1a82763d4a38183c6e70c = L.geoJson(null, {
+                onEachFeature: geo_json_d399c165d2d1a82763d4a38183c6e70c_onEachFeature,
+            
+        });
+
+        function geo_json_d399c165d2d1a82763d4a38183c6e70c_add (data) {
+            geo_json_d399c165d2d1a82763d4a38183c6e70c
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_d399c165d2d1a82763d4a38183c6e70c_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_d399c165d2d1a82763d4a38183c6e70c.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.16, Date: 2024-01-11, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a039a2061b9f5d5d8d93bafc9696f626_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a039a2061b9f5d5d8d93bafc9696f626 = L.geoJson(null, {
+                onEachFeature: geo_json_a039a2061b9f5d5d8d93bafc9696f626_onEachFeature,
+            
+        });
+
+        function geo_json_a039a2061b9f5d5d8d93bafc9696f626_add (data) {
+            geo_json_a039a2061b9f5d5d8d93bafc9696f626
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a039a2061b9f5d5d8d93bafc9696f626_add({"coordinates": [[[130.932965895, -7.667666172], [130.932965895, -7.672227751], [130.946440624, -7.672227751], [130.946440624, -7.676789379], [130.941949048, -7.676789379], [130.941949048, -7.699598232], [130.937457471, -7.699598232], [130.937457471, -7.685912777], [130.923982742, -7.685912777], [130.923982742, -7.681351054], [130.919491166, -7.681351054], [130.919491166, -7.672227751], [130.923982742, -7.672227751], [130.923982742, -7.667666172], [130.932965895, -7.667666172]], [[130.932965895, -7.676789379], [130.932965895, -7.681351054], [130.937457471, -7.681351054], [130.937457471, -7.676789379], [130.932965895, -7.676789379]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a039a2061b9f5d5d8d93bafc9696f626.bindTooltip(
+                `<div>
+                     Coral ID: 50053, Temperature: 30.17, Date: 2024-01-11, DHW: 4.16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_703fec3274637895a8b70791a3b725eb_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_703fec3274637895a8b70791a3b725eb = L.geoJson(null, {
+                onEachFeature: geo_json_703fec3274637895a8b70791a3b725eb_onEachFeature,
+            
+        });
+
+        function geo_json_703fec3274637895a8b70791a3b725eb_add (data) {
+            geo_json_703fec3274637895a8b70791a3b725eb
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_703fec3274637895a8b70791a3b725eb_add({"coordinates": [[[131.000339541, -7.667666172], [130.991356389, -7.667666172], [130.991356389, -7.663104639], [131.000339541, -7.663104639], [131.000339541, -7.667666172]]], "type": "Polygon"});
+
+        
+    
+            geo_json_703fec3274637895a8b70791a3b725eb.bindTooltip(
+                `<div>
+                     Coral ID: 50054, Temperature: 30.14, Date: 2024-01-11, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_b95243ed0cd0e2d5c0795896243fdcf1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b95243ed0cd0e2d5c0795896243fdcf1 = L.geoJson(null, {
+                onEachFeature: geo_json_b95243ed0cd0e2d5c0795896243fdcf1_onEachFeature,
+            
+        });
+
+        function geo_json_b95243ed0cd0e2d5c0795896243fdcf1_add (data) {
+            geo_json_b95243ed0cd0e2d5c0795896243fdcf1
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_b95243ed0cd0e2d5c0795896243fdcf1_add({"coordinates": [[[131.027289, -7.653981717], [131.027289, -7.649420328], [131.036272153, -7.649420328], [131.036272153, -7.653981717], [131.027289, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_b95243ed0cd0e2d5c0795896243fdcf1.bindTooltip(
+                `<div>
+                     Coral ID: 50055, Temperature: 30.13, Date: 2024-01-11, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_6f4fe4e4509feba9166461a3d257f365_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6f4fe4e4509feba9166461a3d257f365 = L.geoJson(null, {
+                onEachFeature: geo_json_6f4fe4e4509feba9166461a3d257f365_onEachFeature,
+            
+        });
+
+        function geo_json_6f4fe4e4509feba9166461a3d257f365_add (data) {
+            geo_json_6f4fe4e4509feba9166461a3d257f365
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_6f4fe4e4509feba9166461a3d257f365_add({"coordinates": [[[131.121612105, -7.653981717], [131.117120528, -7.653981717], [131.117120528, -7.649420328], [131.121612105, -7.649420328], [131.121612105, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_6f4fe4e4509feba9166461a3d257f365.bindTooltip(
+                `<div>
+                     Coral ID: 50056, Temperature: 30.12, Date: 2024-01-11, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_80a7e4c14bb0d581fc0744ba3a292366_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_80a7e4c14bb0d581fc0744ba3a292366 = L.geoJson(null, {
+                onEachFeature: geo_json_80a7e4c14bb0d581fc0744ba3a292366_onEachFeature,
+            
+        });
+
+        function geo_json_80a7e4c14bb0d581fc0744ba3a292366_add (data) {
+            geo_json_80a7e4c14bb0d581fc0744ba3a292366
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_80a7e4c14bb0d581fc0744ba3a292366_add({"coordinates": [[[131.027289, -7.649420328], [131.022797423, -7.649420328], [131.022797423, -7.653981717], [131.013814271, -7.653981717], [131.013814271, -7.649420328], [131.018305847, -7.649420328], [131.018305847, -7.644858986], [131.027289, -7.644858986], [131.027289, -7.649420328]]], "type": "Polygon"});
+
+        
+    
+            geo_json_80a7e4c14bb0d581fc0744ba3a292366.bindTooltip(
+                `<div>
+                     Coral ID: 50058, Temperature: 30.14, Date: 2024-01-11, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_5a78481d1fa09d12ba9032a2060bddcd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5a78481d1fa09d12ba9032a2060bddcd = L.geoJson(null, {
+                onEachFeature: geo_json_5a78481d1fa09d12ba9032a2060bddcd_onEachFeature,
+            
+        });
+
+        function geo_json_5a78481d1fa09d12ba9032a2060bddcd_add (data) {
+            geo_json_5a78481d1fa09d12ba9032a2060bddcd
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_5a78481d1fa09d12ba9032a2060bddcd_add({"coordinates": [[[131.126103681, -7.640297691], [131.117120528, -7.640297691], [131.117120528, -7.635736444], [131.126103681, -7.635736444], [131.126103681, -7.640297691]]], "type": "Polygon"});
+
+        
+    
+            geo_json_5a78481d1fa09d12ba9032a2060bddcd.bindTooltip(
+                `<div>
+                     Coral ID: 50060, Temperature: 30.12, Date: 2024-01-11, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_64cb28af9569fb5ad64e25e6502976f3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_64cb28af9569fb5ad64e25e6502976f3 = L.geoJson(null, {
+                onEachFeature: geo_json_64cb28af9569fb5ad64e25e6502976f3_onEachFeature,
+            
+        });
+
+        function geo_json_64cb28af9569fb5ad64e25e6502976f3_add (data) {
+            geo_json_64cb28af9569fb5ad64e25e6502976f3
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_64cb28af9569fb5ad64e25e6502976f3_add({"coordinates": [[[131.099154223, -7.631175244], [131.099154223, -7.635736444], [131.108137375, -7.635736444], [131.108137375, -7.640297691], [131.099154223, -7.640297691], [131.099154223, -7.644858986], [131.081187917, -7.644858986], [131.081187917, -7.649420328], [131.076696341, -7.649420328], [131.076696341, -7.644858986], [131.072204764, -7.644858986], [131.072204764, -7.649420328], [131.063221611, -7.649420328], [131.063221611, -7.653981717], [131.049746882, -7.653981717], [131.049746882, -7.644858986], [131.058730035, -7.644858986], [131.058730035, -7.640297691], [131.063221611, -7.640297691], [131.063221611, -7.635736444], [131.067713188, -7.635736444], [131.067713188, -7.640297691], [131.085679493, -7.640297691], [131.085679493, -7.631175244], [131.099154223, -7.631175244]]], "type": "Polygon"});
+
+        
+    
+            geo_json_64cb28af9569fb5ad64e25e6502976f3.bindTooltip(
+                `<div>
+                     Coral ID: 50061, Temperature: 30.13, Date: 2024-01-11, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_82d6db0be24227ff64bf8adadec95448_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_82d6db0be24227ff64bf8adadec95448 = L.geoJson(null, {
+                onEachFeature: geo_json_82d6db0be24227ff64bf8adadec95448_onEachFeature,
+            
+        });
+
+        function geo_json_82d6db0be24227ff64bf8adadec95448_add (data) {
+            geo_json_82d6db0be24227ff64bf8adadec95448
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_82d6db0be24227ff64bf8adadec95448_add({"coordinates": [[[131.108137375, -7.412292811], [131.108137375, -7.416851771], [131.094662646, -7.416851771], [131.094662646, -7.421410776], [131.076696341, -7.421410776], [131.076696341, -7.416851771], [131.067713188, -7.416851771], [131.067713188, -7.421410776], [131.049746882, -7.421410776], [131.049746882, -7.425969828], [131.031780576, -7.425969828], [131.031780576, -7.421410776], [131.022797423, -7.421410776], [131.022797423, -7.425969828], [131.018305847, -7.425969828], [131.018305847, -7.421410776], [131.013814271, -7.421410776], [131.013814271, -7.425969828], [131.004831118, -7.425969828], [131.004831118, -7.430528925], [131.000339541, -7.430528925], [131.000339541, -7.425969828], [130.991356389, -7.425969828], [130.991356389, -7.430528925], [130.982373236, -7.430528925], [130.982373236, -7.444206494], [130.977881659, -7.444206494], [130.977881659, -7.453325105], [130.973390083, -7.453325105], [130.973390083, -7.47156288], [130.968898506, -7.47156288], [130.968898506, -7.489801396], [130.96440693, -7.489801396], [130.96440693, -7.494361141], [130.959915354, -7.494361141], [130.959915354, -7.485241698], [130.96440693, -7.485241698], [130.96440693, -7.448765776], [130.968898506, -7.448765776], [130.968898506, -7.435088069], [130.973390083, -7.435088069], [130.973390083, -7.430528925], [130.977881659, -7.430528925], [130.977881659, -7.425969828], [130.986864812, -7.425969828], [130.986864812, -7.421410776], [130.995847965, -7.421410776], [130.995847965, -7.416851771], [131.009322694, -7.416851771], [131.009322694, -7.412292811], [131.013814271, -7.412292811], [131.013814271, -7.407733897], [131.022797423, -7.407733897], [131.022797423, -7.40317503], [131.031780576, -7.40317503], [131.031780576, -7.407733897], [131.045255306, -7.407733897], [131.045255306, -7.412292811], [131.067713188, -7.412292811], [131.067713188, -7.407733897], [131.072204764, -7.407733897], [131.072204764, -7.412292811], [131.081187917, -7.412292811], [131.081187917, -7.416851771], [131.09017107, -7.416851771], [131.09017107, -7.412292811], [131.108137375, -7.412292811]], [[131.022797423, -7.416851771], [131.022797423, -7.412292811], [131.018305847, -7.412292811], [131.018305847, -7.416851771], [131.022797423, -7.416851771]]], "type": "Polygon"});
+
+        
+    
+            geo_json_82d6db0be24227ff64bf8adadec95448.bindTooltip(
+                `<div>
+                     Coral ID: 50115, Temperature: 30.22, Date: 2024-01-11, DHW: 4.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a65f0753c57da0508aae53d7c3f4b2a1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a65f0753c57da0508aae53d7c3f4b2a1 = L.geoJson(null, {
+                onEachFeature: geo_json_a65f0753c57da0508aae53d7c3f4b2a1_onEachFeature,
+            
+        });
+
+        function geo_json_a65f0753c57da0508aae53d7c3f4b2a1_add (data) {
+            geo_json_a65f0753c57da0508aae53d7c3f4b2a1
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a65f0753c57da0508aae53d7c3f4b2a1_add({"coordinates": [[[131.121612105, -7.918624586], [131.117120528, -7.918624586], [131.117120528, -7.904932149], [131.121612105, -7.904932149], [131.121612105, -7.918624586]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a65f0753c57da0508aae53d7c3f4b2a1.bindTooltip(
+                `<div>
+                     Coral ID: 50019, Temperature: 30.25, Date: 2024-01-12, DHW: 4.66
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_4ee7f248c67cd6188096ea506f544561_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4ee7f248c67cd6188096ea506f544561 = L.geoJson(null, {
+                onEachFeature: geo_json_4ee7f248c67cd6188096ea506f544561_onEachFeature,
+            
+        });
+
+        function geo_json_4ee7f248c67cd6188096ea506f544561_add (data) {
+            geo_json_4ee7f248c67cd6188096ea506f544561
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_4ee7f248c67cd6188096ea506f544561_add({"coordinates": [[[130.825168061, -7.882112404], [130.825168061, -7.891240154], [130.829659637, -7.891240154], [130.829659637, -7.927753123], [130.802710179, -7.927753123], [130.802710179, -7.909496245], [130.807201755, -7.909496245], [130.807201755, -7.904932149], [130.811693332, -7.904932149], [130.811693332, -7.900368102], [130.807201755, -7.900368102], [130.807201755, -7.882112404], [130.825168061, -7.882112404]]], "type": "Polygon"});
+
+        
+    
+            geo_json_4ee7f248c67cd6188096ea506f544561.bindTooltip(
+                `<div>
+                     Coral ID: 50021, Temperature: 30.2, Date: 2024-01-12, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_a55a130a68ce051ad28f172f550d6dec_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a55a130a68ce051ad28f172f550d6dec = L.geoJson(null, {
+                onEachFeature: geo_json_a55a130a68ce051ad28f172f550d6dec_onEachFeature,
+            
+        });
+
+        function geo_json_a55a130a68ce051ad28f172f550d6dec_add (data) {
+            geo_json_a55a130a68ce051ad28f172f550d6dec
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_a55a130a68ce051ad28f172f550d6dec_add({"coordinates": [[[130.941949048, -7.882112404], [130.932965895, -7.882112404], [130.932965895, -7.872984849], [130.946440624, -7.872984849], [130.946440624, -7.877548602], [130.941949048, -7.877548602], [130.941949048, -7.882112404]]], "type": "Polygon"});
+
+        
+    
+            geo_json_a55a130a68ce051ad28f172f550d6dec.bindTooltip(
+                `<div>
+                     Coral ID: 50023, Temperature: 30.22, Date: 2024-01-12, DHW: 4.2700000000000005
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f8b6ccf173fb258016d3956300b0e7b4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f8b6ccf173fb258016d3956300b0e7b4 = L.geoJson(null, {
+                onEachFeature: geo_json_f8b6ccf173fb258016d3956300b0e7b4_onEachFeature,
+            
+        });
+
+        function geo_json_f8b6ccf173fb258016d3956300b0e7b4_add (data) {
+            geo_json_f8b6ccf173fb258016d3956300b0e7b4
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f8b6ccf173fb258016d3956300b0e7b4_add({"coordinates": [[[131.040763729, -7.845603358], [131.031780576, -7.845603358], [131.031780576, -7.836476584], [131.036272153, -7.836476584], [131.036272153, -7.827350006], [131.040763729, -7.827350006], [131.040763729, -7.82278679], [131.045255306, -7.82278679], [131.045255306, -7.841039947], [131.040763729, -7.841039947], [131.040763729, -7.845603358]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f8b6ccf173fb258016d3956300b0e7b4.bindTooltip(
+                `<div>
+                     Coral ID: 50026, Temperature: 30.22, Date: 2024-01-12, DHW: 4.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_bf33f71b3954fec8d0eb0311c403c04d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bf33f71b3954fec8d0eb0311c403c04d = L.geoJson(null, {
+                onEachFeature: geo_json_bf33f71b3954fec8d0eb0311c403c04d_onEachFeature,
+            
+        });
+
+        function geo_json_bf33f71b3954fec8d0eb0311c403c04d_add (data) {
+            geo_json_bf33f71b3954fec8d0eb0311c403c04d
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_bf33f71b3954fec8d0eb0311c403c04d_add({"coordinates": [[[131.045255306, -7.809097433], [131.036272153, -7.809097433], [131.036272153, -7.799971437], [131.045255306, -7.799971437], [131.045255306, -7.809097433]]], "type": "Polygon"});
+
+        
+    
+            geo_json_bf33f71b3954fec8d0eb0311c403c04d.bindTooltip(
+                `<div>
+                     Coral ID: 50030, Temperature: 30.18, Date: 2024-01-12, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_41dea6874282b7b931748112a380da5d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_41dea6874282b7b931748112a380da5d = L.geoJson(null, {
+                onEachFeature: geo_json_41dea6874282b7b931748112a380da5d_onEachFeature,
+            
+        });
+
+        function geo_json_41dea6874282b7b931748112a380da5d_add (data) {
+            geo_json_41dea6874282b7b931748112a380da5d
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_41dea6874282b7b931748112a380da5d_add({"coordinates": [[[130.807201755, -7.777157297], [130.807201755, -7.781720028], [130.820676485, -7.781720028], [130.820676485, -7.790845636], [130.825168061, -7.790845636], [130.825168061, -7.809097433], [130.820676485, -7.809097433], [130.820676485, -7.813660503], [130.816184908, -7.813660503], [130.816184908, -7.82278679], [130.807201755, -7.82278679], [130.807201755, -7.827350006], [130.798218602, -7.827350006], [130.798218602, -7.831913271], [130.780252297, -7.831913271], [130.780252297, -7.827350006], [130.771269144, -7.827350006], [130.771269144, -7.82278679], [130.766777568, -7.82278679], [130.766777568, -7.818223622], [130.762285991, -7.818223622], [130.762285991, -7.804534411], [130.780252297, -7.804534411], [130.780252297, -7.799971437], [130.784743873, -7.799971437], [130.784743873, -7.786282808], [130.78923545, -7.786282808], [130.78923545, -7.781720028], [130.793727026, -7.781720028], [130.793727026, -7.777157297], [130.807201755, -7.777157297]], [[130.802710179, -7.786282808], [130.802710179, -7.799971437], [130.807201755, -7.799971437], [130.807201755, -7.795408512], [130.811693332, -7.795408512], [130.811693332, -7.786282808], [130.802710179, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_41dea6874282b7b931748112a380da5d.bindTooltip(
+                `<div>
+                     Coral ID: 50031, Temperature: 30.18, Date: 2024-01-12, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_04d7e93a56b9abe54efdca508da57662_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_04d7e93a56b9abe54efdca508da57662 = L.geoJson(null, {
+                onEachFeature: geo_json_04d7e93a56b9abe54efdca508da57662_onEachFeature,
+            
+        });
+
+        function geo_json_04d7e93a56b9abe54efdca508da57662_add (data) {
+            geo_json_04d7e93a56b9abe54efdca508da57662
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_04d7e93a56b9abe54efdca508da57662_add({"coordinates": [[[131.112628952, -7.781720028], [131.112628952, -7.786282808], [131.117120528, -7.786282808], [131.117120528, -7.795408512], [131.126103681, -7.795408512], [131.126103681, -7.804534411], [131.108137375, -7.804534411], [131.108137375, -7.809097433], [131.099154223, -7.809097433], [131.099154223, -7.799971437], [131.103645799, -7.799971437], [131.103645799, -7.795408512], [131.108137375, -7.795408512], [131.108137375, -7.790845636], [131.103645799, -7.790845636], [131.103645799, -7.781720028], [131.108137375, -7.781720028], [131.108137375, -7.777157297], [131.121612105, -7.777157297], [131.121612105, -7.781720028], [131.112628952, -7.781720028]]], "type": "Polygon"});
+
+        
+    
+            geo_json_04d7e93a56b9abe54efdca508da57662.bindTooltip(
+                `<div>
+                     Coral ID: 50032, Temperature: 30.18, Date: 2024-01-12, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_0179fce15f57a44ec09c6883a5498916_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_0179fce15f57a44ec09c6883a5498916 = L.geoJson(null, {
+                onEachFeature: geo_json_0179fce15f57a44ec09c6883a5498916_onEachFeature,
+            
+        });
+
+        function geo_json_0179fce15f57a44ec09c6883a5498916_add (data) {
+            geo_json_0179fce15f57a44ec09c6883a5498916
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_0179fce15f57a44ec09c6883a5498916_add({"coordinates": [[[131.099154223, -7.786282808], [131.085679493, -7.786282808], [131.085679493, -7.777157297], [131.09017107, -7.777157297], [131.09017107, -7.772594614], [131.103645799, -7.772594614], [131.103645799, -7.777157297], [131.099154223, -7.777157297], [131.099154223, -7.786282808]]], "type": "Polygon"});
+
+        
+    
+            geo_json_0179fce15f57a44ec09c6883a5498916.bindTooltip(
+                `<div>
+                     Coral ID: 50033, Temperature: 30.18, Date: 2024-01-12, DHW: 4.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_617e56b88c79589baca0b3d122643870_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_617e56b88c79589baca0b3d122643870 = L.geoJson(null, {
+                onEachFeature: geo_json_617e56b88c79589baca0b3d122643870_onEachFeature,
+            
+        });
+
+        function geo_json_617e56b88c79589baca0b3d122643870_add (data) {
+            geo_json_617e56b88c79589baca0b3d122643870
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_617e56b88c79589baca0b3d122643870_add({"coordinates": [[[131.063221611, -7.740657183], [131.058730035, -7.740657183], [131.058730035, -7.736094885], [131.063221611, -7.736094885], [131.063221611, -7.740657183]]], "type": "Polygon"});
+
+        
+    
+            geo_json_617e56b88c79589baca0b3d122643870.bindTooltip(
+                `<div>
+                     Coral ID: 50039, Temperature: 30.14, Date: 2024-01-12, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_6dc2829076df153dd325623cf8687ec3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6dc2829076df153dd325623cf8687ec3 = L.geoJson(null, {
+                onEachFeature: geo_json_6dc2829076df153dd325623cf8687ec3_onEachFeature,
+            
+        });
+
+        function geo_json_6dc2829076df153dd325623cf8687ec3_add (data) {
+            geo_json_6dc2829076df153dd325623cf8687ec3
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_6dc2829076df153dd325623cf8687ec3_add({"coordinates": [[[131.072204764, -7.772594614], [131.072204764, -7.777157297], [131.058730035, -7.777157297], [131.058730035, -7.772594614], [131.049746882, -7.772594614], [131.049746882, -7.754344364], [131.054238458, -7.754344364], [131.054238458, -7.749781922], [131.063221611, -7.749781922], [131.063221611, -7.745219528], [131.072204764, -7.745219528], [131.072204764, -7.740657183], [131.076696341, -7.740657183], [131.076696341, -7.736094885], [131.081187917, -7.736094885], [131.081187917, -7.731532636], [131.085679493, -7.731532636], [131.085679493, -7.740657183], [131.081187917, -7.740657183], [131.081187917, -7.745219528], [131.076696341, -7.745219528], [131.076696341, -7.749781922], [131.072204764, -7.749781922], [131.072204764, -7.754344364], [131.067713188, -7.754344364], [131.067713188, -7.758906854], [131.058730035, -7.758906854], [131.058730035, -7.768031979], [131.063221611, -7.768031979], [131.063221611, -7.772594614], [131.072204764, -7.772594614]]], "type": "Polygon"});
+
+        
+    
+            geo_json_6dc2829076df153dd325623cf8687ec3.bindTooltip(
+                `<div>
+                     Coral ID: 50042, Temperature: 30.18, Date: 2024-01-12, DHW: 4.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_c43b204bc47430618d2502aedf9b3d0f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c43b204bc47430618d2502aedf9b3d0f = L.geoJson(null, {
+                onEachFeature: geo_json_c43b204bc47430618d2502aedf9b3d0f_onEachFeature,
+            
+        });
+
+        function geo_json_c43b204bc47430618d2502aedf9b3d0f_add (data) {
+            geo_json_c43b204bc47430618d2502aedf9b3d0f
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_c43b204bc47430618d2502aedf9b3d0f_add({"coordinates": [[[131.121612105, -7.722408281], [131.121612105, -7.726970434], [131.126103681, -7.726970434], [131.126103681, -7.731532636], [131.130595258, -7.731532636], [131.130595258, -7.736094885], [131.126103681, -7.736094885], [131.126103681, -7.749781922], [131.121612105, -7.749781922], [131.121612105, -7.745219528], [131.117120528, -7.745219528], [131.117120528, -7.736094885], [131.112628952, -7.736094885], [131.112628952, -7.722408281], [131.121612105, -7.722408281]]], "type": "Polygon"});
+
+        
+    
+            geo_json_c43b204bc47430618d2502aedf9b3d0f.bindTooltip(
+                `<div>
+                     Coral ID: 50045, Temperature: 30.14, Date: 2024-01-12, DHW: 4.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd = L.geoJson(null, {
+                onEachFeature: geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd_onEachFeature,
+            
+        });
+
+        function geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd_add (data) {
+            geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd_add({"coordinates": [[[131.067713188, -7.717846175], [131.072204764, -7.717846175], [131.072204764, -7.726970434], [131.067713188, -7.726970434], [131.067713188, -7.717846175]]], "type": "Polygon"});
+
+        
+    
+            geo_json_c885b4af1bbbcfd734689e2bb7ae9dfd.bindTooltip(
+                `<div>
+                     Coral ID: 50047, Temperature: 30.14, Date: 2024-01-12, DHW: 4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47 = L.geoJson(null, {
+                onEachFeature: geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47_onEachFeature,
+            
+        });
+
+        function geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47_add (data) {
+            geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47_add({"coordinates": [[[130.932965895, -7.667666172], [130.932965895, -7.672227751], [130.946440624, -7.672227751], [130.946440624, -7.676789379], [130.941949048, -7.676789379], [130.941949048, -7.699598232], [130.937457471, -7.699598232], [130.937457471, -7.685912777], [130.923982742, -7.685912777], [130.923982742, -7.681351054], [130.919491166, -7.681351054], [130.919491166, -7.672227751], [130.923982742, -7.672227751], [130.923982742, -7.667666172], [130.932965895, -7.667666172]], [[130.932965895, -7.676789379], [130.932965895, -7.681351054], [130.937457471, -7.681351054], [130.937457471, -7.676789379], [130.932965895, -7.676789379]]], "type": "Polygon"});
+
+        
+    
+            geo_json_ab6186b75ddf72d9c61ef6d3d0a0aa47.bindTooltip(
+                `<div>
+                     Coral ID: 50053, Temperature: 30.14, Date: 2024-01-12, DHW: 4.16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_41ba0fbad7edad8a776b7350f4dfada9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_41ba0fbad7edad8a776b7350f4dfada9 = L.geoJson(null, {
+                onEachFeature: geo_json_41ba0fbad7edad8a776b7350f4dfada9_onEachFeature,
+            
+        });
+
+        function geo_json_41ba0fbad7edad8a776b7350f4dfada9_add (data) {
+            geo_json_41ba0fbad7edad8a776b7350f4dfada9
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_41ba0fbad7edad8a776b7350f4dfada9_add({"coordinates": [[[131.000339541, -7.667666172], [130.991356389, -7.667666172], [130.991356389, -7.663104639], [131.000339541, -7.663104639], [131.000339541, -7.667666172]]], "type": "Polygon"});
+
+        
+    
+            geo_json_41ba0fbad7edad8a776b7350f4dfada9.bindTooltip(
+                `<div>
+                     Coral ID: 50054, Temperature: 30.11, Date: 2024-01-12, DHW: 4.03
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_f3186f02e78fbac4ce31898bbeed6e0e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f3186f02e78fbac4ce31898bbeed6e0e = L.geoJson(null, {
+                onEachFeature: geo_json_f3186f02e78fbac4ce31898bbeed6e0e_onEachFeature,
+            
+        });
+
+        function geo_json_f3186f02e78fbac4ce31898bbeed6e0e_add (data) {
+            geo_json_f3186f02e78fbac4ce31898bbeed6e0e
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_f3186f02e78fbac4ce31898bbeed6e0e_add({"coordinates": [[[131.027289, -7.653981717], [131.027289, -7.649420328], [131.036272153, -7.649420328], [131.036272153, -7.653981717], [131.027289, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_f3186f02e78fbac4ce31898bbeed6e0e.bindTooltip(
+                `<div>
+                     Coral ID: 50055, Temperature: 30.11, Date: 2024-01-12, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_5531c9c487360275eb7a45a0b216b14a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5531c9c487360275eb7a45a0b216b14a = L.geoJson(null, {
+                onEachFeature: geo_json_5531c9c487360275eb7a45a0b216b14a_onEachFeature,
+            
+        });
+
+        function geo_json_5531c9c487360275eb7a45a0b216b14a_add (data) {
+            geo_json_5531c9c487360275eb7a45a0b216b14a
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_5531c9c487360275eb7a45a0b216b14a_add({"coordinates": [[[131.121612105, -7.653981717], [131.117120528, -7.653981717], [131.117120528, -7.649420328], [131.121612105, -7.649420328], [131.121612105, -7.653981717]]], "type": "Polygon"});
+
+        
+    
+            geo_json_5531c9c487360275eb7a45a0b216b14a.bindTooltip(
+                `<div>
+                     Coral ID: 50056, Temperature: 30.1, Date: 2024-01-12, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_3d355fb02dffe9c93a66796d71d23289_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3d355fb02dffe9c93a66796d71d23289 = L.geoJson(null, {
+                onEachFeature: geo_json_3d355fb02dffe9c93a66796d71d23289_onEachFeature,
+            
+        });
+
+        function geo_json_3d355fb02dffe9c93a66796d71d23289_add (data) {
+            geo_json_3d355fb02dffe9c93a66796d71d23289
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_3d355fb02dffe9c93a66796d71d23289_add({"coordinates": [[[131.027289, -7.649420328], [131.022797423, -7.649420328], [131.022797423, -7.653981717], [131.013814271, -7.653981717], [131.013814271, -7.649420328], [131.018305847, -7.649420328], [131.018305847, -7.644858986], [131.027289, -7.644858986], [131.027289, -7.649420328]]], "type": "Polygon"});
+
+        
+    
+            geo_json_3d355fb02dffe9c93a66796d71d23289.bindTooltip(
+                `<div>
+                     Coral ID: 50058, Temperature: 30.11, Date: 2024-01-12, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_3d8fd07cc9a67deeef46482bab12f5bf_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_3d8fd07cc9a67deeef46482bab12f5bf = L.geoJson(null, {
+                onEachFeature: geo_json_3d8fd07cc9a67deeef46482bab12f5bf_onEachFeature,
+            
+        });
+
+        function geo_json_3d8fd07cc9a67deeef46482bab12f5bf_add (data) {
+            geo_json_3d8fd07cc9a67deeef46482bab12f5bf
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_3d8fd07cc9a67deeef46482bab12f5bf_add({"coordinates": [[[131.126103681, -7.640297691], [131.117120528, -7.640297691], [131.117120528, -7.635736444], [131.126103681, -7.635736444], [131.126103681, -7.640297691]]], "type": "Polygon"});
+
+        
+    
+            geo_json_3d8fd07cc9a67deeef46482bab12f5bf.bindTooltip(
+                `<div>
+                     Coral ID: 50060, Temperature: 30.1, Date: 2024-01-12, DHW: 4.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_e2cfc78e842a747b4969cd6840cf8b66_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e2cfc78e842a747b4969cd6840cf8b66 = L.geoJson(null, {
+                onEachFeature: geo_json_e2cfc78e842a747b4969cd6840cf8b66_onEachFeature,
+            
+        });
+
+        function geo_json_e2cfc78e842a747b4969cd6840cf8b66_add (data) {
+            geo_json_e2cfc78e842a747b4969cd6840cf8b66
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_e2cfc78e842a747b4969cd6840cf8b66_add({"coordinates": [[[131.099154223, -7.631175244], [131.099154223, -7.635736444], [131.108137375, -7.635736444], [131.108137375, -7.640297691], [131.099154223, -7.640297691], [131.099154223, -7.644858986], [131.081187917, -7.644858986], [131.081187917, -7.649420328], [131.076696341, -7.649420328], [131.076696341, -7.644858986], [131.072204764, -7.644858986], [131.072204764, -7.649420328], [131.063221611, -7.649420328], [131.063221611, -7.653981717], [131.049746882, -7.653981717], [131.049746882, -7.644858986], [131.058730035, -7.644858986], [131.058730035, -7.640297691], [131.063221611, -7.640297691], [131.063221611, -7.635736444], [131.067713188, -7.635736444], [131.067713188, -7.640297691], [131.085679493, -7.640297691], [131.085679493, -7.631175244], [131.099154223, -7.631175244]]], "type": "Polygon"});
+
+        
+    
+            geo_json_e2cfc78e842a747b4969cd6840cf8b66.bindTooltip(
+                `<div>
+                     Coral ID: 50061, Temperature: 30.11, Date: 2024-01-12, DHW: 4.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_e1116f09d23ef1299033bc6c9976ec83_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e1116f09d23ef1299033bc6c9976ec83 = L.geoJson(null, {
+                onEachFeature: geo_json_e1116f09d23ef1299033bc6c9976ec83_onEachFeature,
+            
+        });
+
+        function geo_json_e1116f09d23ef1299033bc6c9976ec83_add (data) {
+            geo_json_e1116f09d23ef1299033bc6c9976ec83
+                .addData(data)
+                .addTo(map_301b0dddc87d370f0af3bb1e8ca08095);
+        }
+            geo_json_e1116f09d23ef1299033bc6c9976ec83_add({"coordinates": [[[131.108137375, -7.412292811], [131.108137375, -7.416851771], [131.094662646, -7.416851771], [131.094662646, -7.421410776], [131.076696341, -7.421410776], [131.076696341, -7.416851771], [131.067713188, -7.416851771], [131.067713188, -7.421410776], [131.049746882, -7.421410776], [131.049746882, -7.425969828], [131.031780576, -7.425969828], [131.031780576, -7.421410776], [131.022797423, -7.421410776], [131.022797423, -7.425969828], [131.018305847, -7.425969828], [131.018305847, -7.421410776], [131.013814271, -7.421410776], [131.013814271, -7.425969828], [131.004831118, -7.425969828], [131.004831118, -7.430528925], [131.000339541, -7.430528925], [131.000339541, -7.425969828], [130.991356389, -7.425969828], [130.991356389, -7.430528925], [130.982373236, -7.430528925], [130.982373236, -7.444206494], [130.977881659, -7.444206494], [130.977881659, -7.453325105], [130.973390083, -7.453325105], [130.973390083, -7.47156288], [130.968898506, -7.47156288], [130.968898506, -7.489801396], [130.96440693, -7.489801396], [130.96440693, -7.494361141], [130.959915354, -7.494361141], [130.959915354, -7.485241698], [130.96440693, -7.485241698], [130.96440693, -7.448765776], [130.968898506, -7.448765776], [130.968898506, -7.435088069], [130.973390083, -7.435088069], [130.973390083, -7.430528925], [130.977881659, -7.430528925], [130.977881659, -7.425969828], [130.986864812, -7.425969828], [130.986864812, -7.421410776], [130.995847965, -7.421410776], [130.995847965, -7.416851771], [131.009322694, -7.416851771], [131.009322694, -7.412292811], [131.013814271, -7.412292811], [131.013814271, -7.407733897], [131.022797423, -7.407733897], [131.022797423, -7.40317503], [131.031780576, -7.40317503], [131.031780576, -7.407733897], [131.045255306, -7.407733897], [131.045255306, -7.412292811], [131.067713188, -7.412292811], [131.067713188, -7.407733897], [131.072204764, -7.407733897], [131.072204764, -7.412292811], [131.081187917, -7.412292811], [131.081187917, -7.416851771], [131.09017107, -7.416851771], [131.09017107, -7.412292811], [131.108137375, -7.412292811]], [[131.022797423, -7.416851771], [131.022797423, -7.412292811], [131.018305847, -7.412292811], [131.018305847, -7.416851771], [131.022797423, -7.416851771]]], "type": "Polygon"});
+
+        
+    
+            geo_json_e1116f09d23ef1299033bc6c9976ec83.bindTooltip(
+                `<div>
+                     Coral ID: 50115, Temperature: 30.09, Date: 2024-01-12, DHW: 4.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,7 +1,6 @@
-# %%
+import os
 import requests
 import xarray as xr
-import os
 import gdown
 import zipfile
 import rasterio
@@ -14,11 +13,21 @@ from rasterio.transform import from_origin
 from rasterio.enums import Resampling
 from rasterio.warp import calculate_default_transform, reproject, Resampling
 import psycopg2
+import rasterio
+from rasterio.mask import mask
+from shapely.geometry import shape, mapping 
+from shapely.wkt import dumps
+import numpy as np
+import pandas as pd
+from shapely.wkt import dumps
+from datetime import datetime
+import folium
+import json
 
 
 # %%
 desktop = os.path.join(os.path.expanduser('~'), 'Desktop')
-folder = 'GeoCoral'
+folder = 'Geocoral'
 new_folder_path = os.path.join(desktop, folder)
 if not os.path.exists(new_folder_path):
     os.makedirs(new_folder_path)
@@ -43,35 +52,36 @@ if not os.path.exists(extraction_folder):
     os.makedirs(extraction_folder)
 extract_zip(zip_destination, extraction_folder)
 
-
-# %%
+# Builds the API call for NOOA
 
 current_date = datetime.now()
 two = current_date - timedelta(days=2)
 date_two = two.strftime('%Y-%m-%d')
-link="https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW.nc?CRW_DHW%5B("+date_two+"T12:00:00Z):1:("+date_two+"T12:00:00Z)%5D%5B(-24):1:(20)%5D%5B(89):1:(172)%5D,CRW_SST%5B("+date_two+"T12:00:00Z):1:("+date_two+"T12:00:00Z)%5D%5B(-24):1:(20)%5D%5B(89):1:(172)%5D"
-#link= "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW.nc?CRW_DHW%5B("+date_two+"T12:00:00Z):1:(2024-02-15T12:00:00Z)%5D%5B(-24.0):1:(20.0)%5D%5B(89.0):1:(172.0)%5D"
+link = ("https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW.nc?"
+        f"CRW_DHW%5B({date_two}T12:00:00Z):1:({date_two}T12:00:00Z)%5D%5B(-24):1:(20)%5D%5B(89):1:(172)%5D,"
+        f"CRW_SST%5B({date_two}T12:00:00Z):1:({date_two}T12:00:00Z)%5D%5B(-24):1:(20)%5D%5B(89):1:(172)%5D")
+print("Links for NOOA's API")
+print(link)
 response = requests.get(link)
 print(response)
 
 # %%
-#Opening NetCDF
+# Opening the measurements for Degree heat week 
 dataset = xr.open_dataset(response.content)
 dhw = dataset['CRW_DHW'][0].values
 lats = dataset['latitude'].values
 lons = dataset['longitude'].values
 
+#this module separates the measurements for Sea surface temperature
 dataset_b = xr.open_dataset(response.content)
 sst = dataset['CRW_SST'][0].values
 lats = dataset['latitude'].values
 lons = dataset['longitude'].values
 
-
-
 # %%
 
 
-# Replace this with the actual bounding box you want
+# Bounding box to mask raster
 target_bbox = {
     'minx': 89,
     'miny': 64,
@@ -79,8 +89,9 @@ target_bbox = {
     'maxy': 20
 }
 
-tiff_name = new_folder_path+"/DHW_"+date_two+".tif"
+tiff_name = os.path.join(new_folder_path, "DHW_" + date_two + ".tif")
 print(tiff_name)
+print("files have been created")
 height, width = dhw.shape
 
 transform = from_origin(target_bbox['minx'], target_bbox['maxy'],
@@ -91,8 +102,7 @@ with rasterio.open(tiff_name, 'w', driver='GTiff', height=height, width=width, c
                    dtype=str(dhw.dtype), crs=4326, transform=transform) as dst:
     dst.write(dhw, 1)
 
-
-tiff_name_b = new_folder_path+"/SST_"+date_two+".tif"
+tiff_name_b = os.path.join(new_folder_path, "SST_" + date_two + ".tif")
 print(tiff_name_b)
 height, width = sst.shape
 
@@ -104,17 +114,16 @@ with rasterio.open(tiff_name_b, 'w', driver='GTiff', height=height, width=width,
                    dtype=str(sst.dtype), crs=4326, transform=transform) as dst:
     dst.write(sst, 1)
 
-#you're now going into the database
-shapefile_path = new_folder_path + '/Corals.geojson'
+# You're now going into the database
+shapefile_path = os.path.join(new_folder_path, 'Corals.geojson')
 print(shapefile_path)
 gdf = gpd.read_file(shapefile_path)
 print(gdf)
-new_connection = psycopg2.connect(database = "geocoral" ,user = "postgres", 
-                                  password = "postgres", host = "localhost", port = "5432")
+new_connection = psycopg2.connect(database="geocoral", user="postgres",
+                                  password="postgres", host="localhost", port="5432")
 new_connection.autocommit = True
 cursor = new_connection.cursor()
 
-from shapely.wkt import dumps
 for index, row in gdf.iterrows():
     geom_wkt = dumps(row['geometry'])
     idc_value = row['Idc']
@@ -122,32 +131,24 @@ for index, row in gdf.iterrows():
         "INSERT INTO coral (id, geometry) VALUES (%s, ST_GeomFromText(%s, 4326))"
     )
     cursor.execute(insert_query, (row['Idc'], geom_wkt))
-    
+
 new_connection.commit()
 cursor.close()
 new_connection.close()
 
-
 # %%
-import geopandas as gpd
-import rasterio
-from rasterio.mask import mask
-from shapely.geometry import shape, mapping  # Import the 'shape' function
-from shapely.wkt import dumps
-import numpy as np
-import pandas as pd
 
 def buffer_polygon(geometry, buffer_distance):
     polygon = shape(geometry)
     buffered_polygon = polygon.buffer(buffer_distance)
     return buffered_polygon
 
-shapefile_path = new_folder_path + '/Corals.geojson'
+shapefile_path = os.path.join(new_folder_path, 'Corals.geojson')
 gdf = gpd.read_file(shapefile_path)
 
 # Create an empty list to store the results
 results = []
-buffer_distance= 0.025
+buffer_distance = 0.025
 # Open both rasters at the same time
 with rasterio.open(tiff_name) as src1, rasterio.open(tiff_name_b) as src2:
     # Create an iterator for both features in parallel
@@ -184,7 +185,6 @@ with rasterio.open(tiff_name) as src1, rasterio.open(tiff_name_b) as src2:
 df = pd.DataFrame(results)
 print(df)
 
-
 new_connection_b = psycopg2.connect(
     database="geocoral",
     user="postgres",
@@ -210,9 +210,7 @@ cursor_b.close()
 new_connection_b.close()
 
 
-
-import pandas as pd
-csv_file_path = new_folder_path + '/database.csv'
+csv_file_path = os.path.join(new_folder_path, 'database.csv')
 df_b = pd.read_csv(csv_file_path, delimiter=';')
 
 new_connection_c = psycopg2.connect(
@@ -224,7 +222,7 @@ new_connection_c = psycopg2.connect(
 )
 new_connection_c.autocommit = True
 cursor_c = new_connection_c.cursor()
-from datetime import datetime
+
 
 for index, row in df_b.iterrows():
     coral_b = row['IDC']
@@ -243,4 +241,47 @@ new_connection_c.commit()
 cursor_c.close()
 new_connection_c.close()
 
+new_connection_d = psycopg2.connect(database='geocoral', user="postgres", password="postgres", host="localhost", port="5432")
+new_connection_d.autocommit = True
+cursor_d = new_connection_d.cursor()
 
+# Example query to fetch temperature data along with coral geometries
+temperature_query = """
+SELECT t.ID, t.Coral_ID, t.Date, t.Temperature, t.DHW, ST_AsGeoJSON(c.Geometry) 
+FROM Temperature t
+JOIN Coral c ON t.Coral_ID = c.ID
+WHERE t.Temperature > 30 AND t.DHW > 3;
+"""
+
+cursor_d.execute(temperature_query)
+
+temperature_data = cursor_d.fetchall()
+
+if not temperature_data:
+    print("No temperature data found for the given conditions")
+else:
+    result_list = [{
+        'ID': data[0],
+        'Coral_ID': data[1],
+        'Date': data[2].strftime("%Y-%m-%d"),
+        'Temperature': data[3],
+        'DHW': data[4],
+        'Geometry': json.loads(data[5])  
+    } for data in temperature_data]
+
+    # Create Folium map centered around Indonesia with a dark background
+    m = folium.Map(location=[-7.5489, 131.0149], zoom_start=10, tiles='CartoDB dark_matter')
+
+    for result in result_list:
+        folium.GeoJson(
+            result['Geometry'],
+            name=f"Coral_{result['Coral_ID']}",
+            tooltip=f"Coral ID: {result['Coral_ID']}, Temperature: {result['Temperature']}, Date: {result['Date']}, DHW: {result['DHW']}"
+        ).add_to(m)
+
+    # Save the map to an HTML file on the desktop
+    m.save(os.path.join(new_folder_path, 'Corals.html'))
+
+# Close the database connection
+cursor_d.close()
+new_connection_d.close()
